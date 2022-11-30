@@ -1,3 +1,39 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 h1 {
   color: #172b4d;
+}
+
+#toolbar {
+  display: flex;
+  height: 48px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #6070ff;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+#menu-bars-container {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar {
+  width: 35px;
+  height: 5px;
+  background-color: #6070ff;
+  margin: 6px 0;
 }
