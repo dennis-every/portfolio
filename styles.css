@@ -150,7 +150,7 @@ header {
   color: #7a869a;
 }
 
-.work-card > .experience > li:first-child {
+.experience > li:first-child {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
