@@ -5,14 +5,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-  color: #172b4d;
-}
-
 #toolbar {
   display: flex;
   height: 48px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
 }
 
@@ -36,4 +31,52 @@ h1 {
   height: 5px;
   background-color: #6070ff;
   margin: 6px 0;
+}
+
+#headline-container {
+  padding: 0 10px;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url('images/background.png');
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.headline-header {
+  margin: 0;
+  padding: 0;
+  margin-top: 150px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.headline-text {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+#connect {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-transform: uppercase;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon {
+  color: #505f79;
+  margin-right: 12px;
 }
