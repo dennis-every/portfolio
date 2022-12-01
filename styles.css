@@ -48,9 +48,10 @@ header {
   margin-top: 48px;
   padding: 0 10px;
   height: 100%;
+  width: calc(100% - 20px);
   min-height: 100vh;
   background-image: url('images/background.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
