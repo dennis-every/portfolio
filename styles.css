@@ -7,6 +7,9 @@ body {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
   width: 100%;
   background: #fff;
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
@@ -42,6 +45,7 @@ header {
 }
 
 #headline-container {
+  margin-top: 48px;
   padding: 0 10px;
   height: 100%;
   min-height: 100vh;
@@ -55,11 +59,13 @@ header {
 .headline-header {
   margin: 0;
   padding: 0;
-  margin-top: 150px;
+  height: 300px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
   color: #172b4d;
+  display: flex;
+  align-items: flex-end;
 }
 
 .headline-text {
