@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  background: #f7f7f9;
 }
 
 header {
@@ -46,21 +47,24 @@ header {
 
 #headline-container {
   margin-top: 48px;
-  padding: 0 10px;
-  height: 100%;
-  width: calc(100% - 20px);
-  min-height: 100vh;
+  padding: 0 20px;
+  height: 604px;
+  width: 375px;
   background-image: url('images/background.png');
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  border-radius: 0 0 0 90px;
 }
 
 .headline-header {
   margin: 0;
   padding: 0;
-  height: 300px;
+  height: 260px;
+  width: 100%;
+  max-width: 355px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
@@ -74,6 +78,9 @@ header {
   padding: 0;
   font-size: 16px;
   line-height: 24px;
+  width: 100%;
+  max-width: 355px;
+  overflow: auto;
   color: #344563;
 }
 
@@ -97,4 +104,105 @@ header {
 .icon {
   color: #505f79;
   margin-right: 12px;
+}
+
+#works {
+  display: grid;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.work-card {
+  grid-column: 1;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
+  width: 327px;
+  height: 552px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.work-card > h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.work-card > .experience {
+  list-style-type: none;
+  padding: 6px 0;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.work-card > .experience > li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.work-card > .experience > li:first-child {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #344563;
+}
+
+.work-card > span {
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.work-card > .technologies {
+  list-style-type: none;
+  padding: 3px 0;
+  margin: 0;
+  display: flex;
+}
+
+.work-card > .technologies > li {
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+#button-container {
+  width: 100%;
+  padding: 12px 0;
+}
+
+.btn {
+  box-sizing: border-box;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 12px;
+}
+
+.btn > a {
+  text-decoration: none;
+  color: #396df2;
 }
