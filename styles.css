@@ -6,6 +6,11 @@ body {
   background: #f7f7f9;
 }
 
+/* 
+===========================
+HEADER SECTION
+*/
+
 header {
   position: fixed;
   top: 0;
@@ -14,6 +19,7 @@ header {
   width: 100%;
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 #toolbar {
@@ -44,6 +50,11 @@ header {
   background-color: #6070ff;
   margin: 6px 0;
 }
+
+/* 
+===========================
+HEADLINE SECTION
+*/
 
 #headline-container {
   box-sizing: border-box;
@@ -116,6 +127,11 @@ header {
   margin-right: 12px;
   font-size: 24px;
 }
+
+/* 
+===========================
+WORKS SECTION
+*/
 
 #works {
   display: grid;
@@ -229,6 +245,18 @@ header {
   background: #6070ff;
 }
 
+.btn:active {
+  background: #2230d2;
+  color: #fff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  border: 1px solid #fff;
+}
+
+/* 
+===========================
+ABOUT SECTION
+*/
+
 #about-container {
   box-sizing: border-box;
   margin: 0;
@@ -248,7 +276,6 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   row-gap: 12px;
-  margin-bottom: 100px;
 }
 
 #categories-container {
@@ -320,7 +347,21 @@ header {
   padding-right: 16px;
 }
 
+/* 
+===========================
+CONTACT FORM SECTION
+*/
+
 #contact-form-container {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+#contact-form-container-ul {
+  list-style: none;
+  margin: 0;
+  padding: 80px 24px;
   box-sizing: border-box;
   min-height: 779px;
   height: 100%;
@@ -329,13 +370,15 @@ header {
   background-image: url('images/background-contact-form.png');
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 150px 0 0 0;
-  padding: 200px 24px;
+  border-radius: 100px 0 0 0;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  gap: 28px;
 }
 
 #contact-form-header {
+  margin: 0;
   height: 56px;
   width: 327px;
   font-weight: 700;
@@ -346,12 +389,17 @@ header {
 }
 
 #contact-form-text {
+  margin: 0;
   width: 327px;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
   overflow-wrap: break-word;
+}
+
+#contact-form {
+  width: 327px;
 }
 
 #contact-form-ul {
@@ -376,7 +424,7 @@ input {
   padding: 15px 16px;
 }
 
-textarea {
+#message {
   height: 170px;
   box-sizing: border-box;
   width: 327px;
