@@ -6,7 +6,7 @@ body {
   background: #f7f7f9;
 }
 
-/* 
+/*
 ===========================
 HEADER SECTION
 */
@@ -51,7 +51,7 @@ header {
   margin: 6px 0;
 }
 
-/* 
+/*
 ===========================
 HEADLINE SECTION
 */
@@ -128,7 +128,7 @@ HEADLINE SECTION
   font-size: 24px;
 }
 
-/* 
+/*
 ===========================
 WORKS SECTION
 */
@@ -248,11 +248,11 @@ WORKS SECTION
 .btn:active {
   background: #2230d2;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
 }
 
-/* 
+/*
 ===========================
 ABOUT SECTION
 */
@@ -347,7 +347,7 @@ ABOUT SECTION
   padding-right: 16px;
 }
 
-/* 
+/*
 ===========================
 CONTACT FORM SECTION
 */
@@ -455,13 +455,13 @@ input {
 #btn-contact-form:hover {
   background: #6070ff;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
 }
 
 #btn-contact-form:active {
   background: #2230d2;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
 }
