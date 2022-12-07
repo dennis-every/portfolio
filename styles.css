@@ -6,12 +6,10 @@ body {
   background: #f7f7f9;
 }
 
-/*
-===========================
-HEADER SECTION
-*/
+/* HEADER TOOLBAR SECTION */
 
 header {
+  box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
@@ -30,6 +28,7 @@ header {
 
 #logo {
   font-size: 18px;
+  line-height: 20px;
   font-weight: 700;
   color: #6070ff;
   display: flex;
@@ -51,10 +50,38 @@ header {
   margin: 6px 0;
 }
 
-/*
-===========================
-HEADLINE SECTION
-*/
+#menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #menu-bars {
+    display: none;
+  }
+  #menu {
+    display: block;
+    list-style: none;
+    display: flex;
+  }
+  #menu a {
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+}
+
+/* HEADLINE SECTION */
 
 #headline-container {
   box-sizing: border-box;
@@ -128,10 +155,7 @@ HEADLINE SECTION
   font-size: 24px;
 }
 
-/*
-===========================
-WORKS SECTION
-*/
+/* WORKS SECTION */
 
 #works {
   display: grid;
@@ -252,10 +276,7 @@ WORKS SECTION
   border: 1px solid #fff;
 }
 
-/*
-===========================
-ABOUT SECTION
-*/
+/* ABOUT SECTION */
 
 #about-container {
   box-sizing: border-box;
@@ -347,10 +368,7 @@ ABOUT SECTION
   padding-right: 16px;
 }
 
-/*
-===========================
-CONTACT FORM SECTION
-*/
+/* CONTACT SECTION */
 
 #contact-form-container {
   margin: 0;
@@ -472,6 +490,8 @@ input {
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border: 1px solid #fff;
 }
+
+/* FOOTER SECTION */
 
 #footer {
   height: 35px;
