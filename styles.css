@@ -367,9 +367,11 @@ CONTACT FORM SECTION
   height: 100%;
   min-width: 327px;
   width: 100%;
+  background: #6070ff;
   background-image: url('images/background-contact-form.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: right;
   border-radius: 100px 0 0 0;
   display: flex;
   flex-direction: column;
@@ -377,10 +379,14 @@ CONTACT FORM SECTION
   gap: 28px;
 }
 
+#contact-form-container-ul > li {
+  width: 100%;
+}
+
 #contact-form-header {
   margin: 0;
   height: 56px;
-  width: 327px;
+  width: 100%;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -390,7 +396,7 @@ CONTACT FORM SECTION
 
 #contact-form-text {
   margin: 0;
-  width: 327px;
+  width: 100%;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -399,10 +405,11 @@ CONTACT FORM SECTION
 }
 
 #contact-form {
-  width: 327px;
+  width: 100%;
 }
 
 #contact-form-ul {
+  width: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -414,7 +421,7 @@ CONTACT FORM SECTION
 input {
   box-sizing: border-box;
   height: 48px;
-  width: 327px;
+  width: 100%;
   background: #fff;
   font-size: 17px;
   line-height: 20px;
@@ -427,7 +434,7 @@ input {
 #message {
   height: 170px;
   box-sizing: border-box;
-  width: 327px;
+  width: 100%;
   background: #fff;
   font-size: 17px;
   line-height: 20px;
