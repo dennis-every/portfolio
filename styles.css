@@ -38,6 +38,20 @@ header {
   text-decoration: none;
 }
 
+#logo:hover {
+  animation: flip 1s linear;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
 #menu-bars-container {
   padding-right: 10px;
   display: flex;
