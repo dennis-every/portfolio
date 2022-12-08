@@ -223,7 +223,6 @@ header {
 .work-card__header img {
   width: 100%;
   height: auto;
-  border: 1px solid #e6e6e1;
   border-radius: 8px;
   object-fit: contain;
 }
@@ -347,7 +346,7 @@ header {
     grid-column: 1/3;
   }
 
-  .ul {
+  .work-card__ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -363,6 +362,14 @@ header {
 
   .work-card__btn-container {
     padding: 24px 0;
+  }
+
+  #work__second {
+    flex-direction: row-reverse;
+  }
+
+  #work__fourth {
+    flex-direction: row-reverse;
   }
 }
 
