@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Microverse Project Portfolio Page</b></h3>
+  <h1><b>Microverse Project Portfolio Page</b></h1>
 
 </div>
 
@@ -45,7 +45,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Mobile friendly page**
+- **Responsive pages**
 - **Contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

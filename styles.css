@@ -507,9 +507,16 @@ header {
 /* CONTACT SECTION */
 
 #contact-form-container {
-  margin: 0;
-  padding: 0;
-  background: #fff;
+  margin: -100px 0 0 0;
+  padding: 100px 0 0 0;
+  background: #6070ff;
+  background-image: url('images/background-contact-form.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  border-radius: 100px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 
 #contact-form-container-ul {
@@ -519,14 +526,7 @@ header {
   box-sizing: border-box;
   min-height: 779px;
   height: 100%;
-  min-width: 327px;
   width: 100%;
-  background: #6070ff;
-  background-image: url('images/background-contact-form.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  border-radius: 100px 0 0 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -627,6 +627,26 @@ input {
   border: 1px solid #fff;
 }
 
+@media screen and (min-width: 768px) {
+  #contact-form-container {
+    box-sizing: border-box;
+    border: 100px solid #6070ff;
+    background-position: top left;
+    background-image: url('images/background-contact-form-lg.png');
+  }
+
+  #contact-form-container-ul {
+    width: 60vw;
+    min-width: 768px;
+    padding: 150px;
+  }
+
+  #btn-contact-form {
+    display: flex;
+    margin: auto;
+  }
+}
+
 /* FOOTER SECTION */
 
 #footer {
@@ -645,4 +665,10 @@ input {
   height: 5px;
   width: 134px;
   background: #000;
+}
+
+@media screen and (min-width: 768px) {
+  #black-bar {
+    display: none;
+  }
 }
