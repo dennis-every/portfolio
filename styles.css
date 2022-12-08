@@ -155,10 +155,14 @@ header {
 @media screen and (min-width: 768px) {
   #headline-container {
     background-image: url('images/headline-bg-desktop.png');
-    background-size: cover;
+    background-size: contain;
     background-position: top left;
     min-height: 846px;
-    margin: 0;
+    margin: 48px 0 0 0;
+    border-top: 48px solid #fff;
+    border-right: 8px solid #fff;
+    border-bottom: 77px solid #fff;
+    border-left: 35px solid #fff;
     padding: 0;
     display: flex;
     justify-content: center;
