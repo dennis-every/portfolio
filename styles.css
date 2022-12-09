@@ -40,6 +40,20 @@ fieldset {
   text-decoration: none;
 }
 
+#logo:hover {
+  animation: flip 1s linear;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
 #menu-bars-container {
   padding-right: 10px;
   display: flex;
@@ -312,6 +326,7 @@ fieldset {
 .btn-container > .btn > a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.5s ease-out;
 }
 
 .btn-container .btn:hover {
