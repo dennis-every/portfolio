@@ -40,11 +40,11 @@
     <!-- HEADLINE SECTION -->
     <section id="headline-container">
       <article id="headline">
-        <div>
+        <header>
           <h1 class="header">
             <span>I’m Dennis<br />Glad to see you!</span>
           </h1>
-        </div>
+        </header>
         <div>
           <p class="text">
             I’m a software developer! I can help you build a product, feature or
@@ -125,9 +125,9 @@
               </picture>
             </div>
             <div class="work-card__body">
-              <ul>
-                <li class="work-card__title">Tonic</li>
-                <li>
+              <div class="elements">
+                <header class="work-card__title">Tonic</header>
+                <div>
                   <ul class="work-card__experience">
                     <li>Canopy</li>
                     <li>&#x2022;</li>
@@ -135,24 +135,24 @@
                     <li>&#x2022;</li>
                     <li>2015</li>
                   </ul>
-                </li>
-                <li class="work-card__description">
+                </div>
+                <p class="work-card__description">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
-                </li>
-                <li>
+                </p>
+                <div>
                   <ul class="work-card__technologies">
                     <li>html</li>
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
-                </li>
-                <li class="btn-container">
+                </div>
+                <div class="btn-container">
                   <button type="button" class="btn">
                     <a href="#">See Project</a>
                   </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </article>
         </li>
@@ -171,9 +171,9 @@
               </picture>
             </div>
             <div class="work-card__body">
-              <ul>
-                <li class="work-card__title">Multi-Post Stories</li>
-                <li>
+              <div class="elements">
+                <header class="work-card__title">Multi-Post Stories</header>
+                <div>
                   <ul class="work-card__experience mobile">
                     <li>Canopy</li>
                     <li>&#x2022;</li>
@@ -188,17 +188,17 @@
                     <li>&#x2022;</li>
                     <li>2015</li>
                   </ul>
-                </li>
-                <li class="work-card__description mobile">
+                </div>
+                <p class="work-card__description mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
-                </li>
-                <li class="work-card__description desktop">
+                </p>
+                <p class="work-card__description desktop">
                   Experimental content creation feature that allows users to add
                   to an existing story over the course of a day without spamming
                   their friends.
-                </li>
-                <li>
+                </p>
+                <div>
                   <ul class="work-card__technologies mobile">
                     <li>html</li>
                     <li>css</li>
@@ -210,13 +210,13 @@
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
-                </li>
-                <li class="btn-container">
+                </div>
+                <div class="btn-container">
                   <button type="button" class="btn">
                     <a href="#">See Project</a>
                   </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </article>
         </li>
@@ -235,10 +235,10 @@
               </picture>
             </div>
             <div class="work-card__body">
-              <ul>
-                <li class="work-card__title mobile">Tonic</li>
-                <li class="work-card__title desktop">Facebook 360</li>
-                <li>
+              <div class="elements">
+                <header class="work-card__title mobile">Tonic</header>
+                <header class="work-card__title desktop">Facebook 360</header>
+                <div>
                   <ul class="work-card__experience mobile">
                     <li>Canopy</li>
                     <li>&#x2022;</li>
@@ -253,17 +253,17 @@
                     <li>&#x2022;</li>
                     <li>2015</li>
                   </ul>
-                </li>
-                <li class="work-card__description mobile">
+                </div>
+                <p class="work-card__description mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
-                </li>
-                <li class="work-card__description desktop">
+                </p>
+                <p class="work-card__description desktop">
                   Exploring the future of media in Facebook's first Virtual
                   Reality app; a place to discover and enjoy 360 photos and
                   videos on Gear VR.
-                </li>
-                <li>
+                </p>
+                <div>
                   <ul class="work-card__technologies mobile">
                     <li>html</li>
                     <li>css</li>
@@ -275,13 +275,13 @@
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
-                </li>
-                <li class="btn-container">
+                </div>
+                <div class="btn-container">
                   <button type="button" class="btn">
                     <a href="#">See Project</a>
                   </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </article>
         </li>
@@ -300,10 +300,14 @@
               </picture>
             </div>
             <div class="work-card__body">
-              <ul>
-                <li class="work-card__title mobile">Multi-Post Stories</li>
-                <li class="work-card__title desktop">Uber Navigation</li>
-                <li>
+              <div class="elements">
+                <header class="work-card__title mobile">
+                  Multi-Post Stories
+                </header>
+                <header class="work-card__title desktop">
+                  Uber Navigation
+                </header>
+                <div>
                   <ul class="work-card__experience mobile">
                     <li>Canopy</li>
                     <li>&#x2022;</li>
@@ -318,16 +322,16 @@
                     <li>&#x2022;</li>
                     <li>2018</li>
                   </ul>
-                </li>
-                <li class="work-card__description mobile">
+                </div>
+                <p class="work-card__description mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
-                </li>
-                <li class="work-card__description desktop">
+                </p>
+                <p class="work-card__description desktop">
                   A smart assistant to make driving more safe, efficient, and
                   fun by unlocking your most expensive computer: your car.
-                </li>
-                <li>
+                </p>
+                <div>
                   <ul class="work-card__technologies mobile">
                     <li>html</li>
                     <li>css</li>
@@ -339,13 +343,13 @@
                     <li>css</li>
                     <li>javascript</li>
                   </ul>
-                </li>
-                <li class="btn-container">
+                </div>
+                <div class="btn-container">
                   <button type="button" class="btn">
                     <a href="#">See Project</a>
                   </button>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </article>
         </li>

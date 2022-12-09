@@ -16,7 +16,7 @@ fieldset {
 
 /* HEADER TOOLBAR SECTION */
 
-header {
+#toolbar {
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -26,11 +26,7 @@ header {
   background: #fff;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
   z-index: 9999;
-}
-
-#toolbar {
   display: flex;
-  height: 48px;
   justify-content: space-between;
 }
 
@@ -62,7 +58,7 @@ header {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  #toolbar {
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -93,14 +89,14 @@ header {
 #headline-container {
   box-sizing: border-box;
   margin-top: 48px;
-  padding: 114px 24px 0 24px;
+  padding: 114px 24px;
   min-height: 626px;
   height: 100%;
   width: 100%;
   background: #fff;
   background-image: url('images/headline-bg.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto;
   border-radius: 0 0 0 90px;
 }
 
@@ -112,7 +108,7 @@ header {
   justify-content: flex-start;
 }
 
-.header {
+#headline .header {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -156,8 +152,7 @@ header {
 @media screen and (min-width: 768px) {
   #headline-container {
     background-image: url('images/headline-bg-desktop.png');
-    background-size: contain;
-    background-position: top left;
+    background-size: 100% auto;
     min-height: 846px;
     margin: 48px 0 0 0;
     border-top: 48px solid #fff;
@@ -232,8 +227,7 @@ header {
   width: 100%;
 }
 
-.work-card__body > ul {
-  list-style: none;
+.work-card__body > .elements {
   padding: 0;
   margin: 0;
   display: grid;
