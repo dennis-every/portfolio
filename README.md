@@ -108,7 +108,8 @@ To run tests, run the following command:
 
 ### Deployment
 
-n/a
+- Deployed with github pages at:
+- https://dennis-every.github.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
