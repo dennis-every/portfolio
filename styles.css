@@ -28,6 +28,7 @@ fieldset {
   z-index: 9999;
   display: flex;
   justify-content: space-between;
+  z-index: 999;
 }
 
 #logo {
@@ -712,4 +713,43 @@ input {
   .mobile {
     display: none;
   }
+}
+
+#mobileMenu {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  /* filter: drop-shadow(4px 0 4px rgba(0, 0, 0, 0.25)); */
+  filter: drop-shadow(16px 16px 10px black);
+  opacity: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+}
+
+#mobileMenu > .show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#mobileMenu > ul {
+  border: 1px solid red;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+#mobileMenu li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
 }
