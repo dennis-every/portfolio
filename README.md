@@ -106,6 +106,10 @@ To run tests, run the following command:
   npx stylelint "**/*.{css,scss}"
 ```
 
+```sh
+  npx eslint .
+```
+
 ### Deployment
 
 - Deployed with github pages at:
