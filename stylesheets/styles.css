@@ -704,6 +704,9 @@ input {
   #black-bar {
     display: none;
   }
+  #mobile-menu {
+    display: none !important;
+  }
 }
 
 /* REPLACE ELEMENT CONTENTS RESPONSIVELY */
