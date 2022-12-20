@@ -774,3 +774,8 @@ input {
   font-weight: 600;
   letter-spacing: 1.2px;
 }
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
