@@ -704,10 +704,6 @@ input {
   #black-bar {
     display: none;
   }
-
-  #mobile-menu {
-    display: none !important;
-  }
 }
 
 /* REPLACE ELEMENT CONTENTS RESPONSIVELY */
@@ -778,4 +774,10 @@ input {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none !important;
+  }
 }
