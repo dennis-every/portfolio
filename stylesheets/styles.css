@@ -5,7 +5,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  background: #f7f7f9;
+  background: #f7f7f9 !important;
 }
 
 fieldset {
@@ -108,7 +108,7 @@ fieldset {
   height: 100%;
   width: 100%;
   background: #fff;
-  background-image: url('images/headline-bg.png');
+  background-image: url('/images/headline-bg.png');
   background-repeat: no-repeat;
   background-size: 100% auto;
   border-radius: 0 0 0 90px;
@@ -165,7 +165,7 @@ fieldset {
 
 @media screen and (min-width: 768px) {
   #headline-container {
-    background-image: url('images/headline-bg-desktop.png');
+    background-image: url('/images/headline-bg-desktop.png');
     background-size: 100% auto;
     min-height: 846px;
     margin: 48px 0 0 0;
@@ -436,6 +436,13 @@ fieldset {
   row-gap: 12px;
 }
 
+#description > h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
 #categories-container {
   height: 100%;
   width: 100%;
@@ -553,7 +560,7 @@ fieldset {
   margin: 0;
   padding: 80px 24px;
   background: #6070ff;
-  background-image: url('images/background-contact-form.png');
+  background-image: url('/images/background-contact-form.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -658,7 +665,7 @@ input {
 @media screen and (min-width: 768px) {
   #contact-form-container-article {
     background-position: top left;
-    background-image: url('images/background-contact-form-lg.png');
+    background-image: url('/images/background-contact-form-lg.png');
     background-size: 100% auto;
   }
 

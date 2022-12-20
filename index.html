@@ -385,7 +385,7 @@
       <article id="about">
         <div id="description-container">
           <div id="description">
-            <h2 class="header">
+            <h2>
               <span>About<br />Myself</span>
             </h2>
             <p class="text">
@@ -506,37 +506,37 @@
           >
             <fieldset id="contact-form-fieldset">
               <p>
-                <label>
-                  <input
-                    name="name"
-                    id="name"
-                    type="text"
-                    placeholder="Enter your name"
-                    maxlength="30"
-                    required
-                  />
-                </label>
+                <label for="name"></label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  maxlength="30"
+                  required
+                />
               </p>
               <p>
-                <label>
-                  <input
-                    name="email"
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                /></label>
+                <label for="email"></label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
               </p>
               <p>
-                <label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Write your message here"
-                    maxlength="500"
-                    required
-                  ></textarea>
-                </label>
+                <label for="message"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
               </p>
               <p>
                 <button id="btn-contact-form" type="submit">
