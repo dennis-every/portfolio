@@ -74,7 +74,7 @@ const worksArray = [
   },
 ];
 
-const worksPopupHandler = () => {
+const worksLoadHandler = () => {
   const works = document.getElementById('works');
   worksArray.forEach((work) => {
     const workCard = document.createElement('li');
@@ -122,6 +122,18 @@ const worksPopupHandler = () => {
   });
 };
 
+const cardClickHandler = () => {
+  console.log('Hello');
+};
+
+const worksActivateLinkHandler = () => {
+  const workCards = document.querySelectorAll('.work-card');
+  workCards.forEach((card) => {
+    card.addEventListener('click', cardClickHandler);
+  });
+};
+
 window.onload = () => {
-  worksPopupHandler();
+  worksLoadHandler();
+  worksActivateLinkHandler();
 };
