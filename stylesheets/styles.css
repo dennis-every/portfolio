@@ -704,10 +704,6 @@ input {
   #black-bar {
     display: none;
   }
-
-  #mobile-menu {
-    display: none !important;
-  }
 }
 
 /* REPLACE ELEMENT CONTENTS RESPONSIVELY */
@@ -773,4 +769,15 @@ input {
   line-height: 4rem;
   font-weight: 600;
   letter-spacing: 1.2px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile-menu {
+    display: none !important;
+  }
 }
