@@ -2,6 +2,8 @@ const menuBars = document.getElementById('menu-bars');
 const mobileMenu = document.getElementById('mobile-menu');
 const closeMenuBtn = document.getElementById('close-menu-btn');
 const mobileLinks = document.getElementById('mobile-links');
+const workModal = document.getElementById('work-modal');
+const closeWorkModalBtn = document.getElementById('close-modal-btn');
 
 const preventDefaultHandler = (e) => {
   e.preventDefault();
@@ -122,9 +124,20 @@ const worksLoadHandler = () => {
   });
 };
 
-const cardClickHandler = () => {
-  console.log('Hello');
+const cardClickHandler = (event) => {
+  console.log(event);
+  workModal.classList.replace('d-none', 'd-flex');
+  document.body.classList.add('stop-scrolling');
+  document.body.addEventListener('touchmove', preventDefaultHandler);
 };
+
+const closeWorkModalHandler = () => {
+  workModal.classList.replace('d-flex', 'd-none');
+  document.body.classList.remove('stop-scrolling');
+  document.body.removeEventListener('touchmove', preventDefaultHandler);
+};
+
+closeWorkModalBtn.addEventListener('click', closeWorkModalHandler);
 
 const worksActivateLinkHandler = () => {
   const workCards = document.querySelectorAll('.work-card');
