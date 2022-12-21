@@ -30,7 +30,7 @@ const worksArray = [
     title: 'Tonic',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript'],
     urlMobile: '/images/work_1.jpg',
     urlDesktop: '/images/work_1_lg.png',
@@ -43,7 +43,7 @@ const worksArray = [
     title: 'Multi-Post Stories',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript'],
     urlMobile: 'images/work_2.jpg',
     urlDesktop: 'images/work_2_lg.png',
@@ -56,7 +56,7 @@ const worksArray = [
     title: 'Tonic',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript'],
     urlMobile: 'images/work_3.jpg',
     urlDesktop: 'images/work_3_lg.png',
@@ -69,7 +69,7 @@ const worksArray = [
     title: 'Multi-Post Stories',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ['html', 'css', 'javascript'],
     urlMobile: 'images/work_4.jpg',
     urlDesktop: 'images/work_4_lg.png',
@@ -140,13 +140,22 @@ const cardClickHandler = (id) => {
   document.body.addEventListener('touchmove', preventDefaultHandler);
   const workCard = document.createElement('div');
   workCard.classList.add('work-card');
-  workCard.classList.add('bg-white');
   workCard.innerHTML = `
-    <header>
-      <div id="close-modal-btn" class="text-end">
-        <i class="fa-solid fa-x"></i>
+    <div class='row'>
+      <header class='work-card__title col-10'>${worksArray[id].title}</header>
+      <div id='close-modal-btn' class='col-2 text-end'>
+        <i class='fa-solid fa-x'></i>
       </div>
-    </header>
+    </div>
+    <div class='my-3'>
+      <ul class='work-card__experience'>
+        <li class='text-uppercase'>${worksArray[id].experiences[0]}</li>
+        <li>&#x2022;</li>
+        <li>${worksArray[id].experiences[1]}</li>
+        <li>&#x2022;</li>
+        <li>${worksArray[id].experiences[2]}</li>
+      </ul>
+    </div>
     <article class='work-card__article'>
       <div class='work-card__header'>
         <picture>
@@ -156,20 +165,10 @@ const cardClickHandler = (id) => {
             alt=${worksArray[id].alt}
           />
         </picture>
-      </div>
+      </div>      
       <div class='work-card__body'>
-        <div class='elements'>
-          <header class='work-card__title'>${worksArray[id].title}</header>
-          <div>
-            <ul class='work-card__experience'>
-              <li>${worksArray[id].experiences[0]}</li>
-              <li>&#x2022;</li>
-              <li>${worksArray[id].experiences[1]}</li>
-              <li>&#x2022;</li>
-              <li>${worksArray[id].experiences[2]}</li>
-            </ul>
-          </div>
-          <p class='work-card__description'>${worksArray[1].description}</p>
+        <div class='elements'>          
+          <p class='work-card__description'>${worksArray[id].description}</p>
           <div>
             <ul class='work-card__technologies'>
               <li>${worksArray[id].technologies[0]}</li>
@@ -177,16 +176,20 @@ const cardClickHandler = (id) => {
               <li>${worksArray[id].technologies[2]}</li>
             </ul>
           </div>
-          <div class='btn-container'>
-            <button type='button' class='btn'>
-              <a href=${worksArray[id].live}>See Project</a>
+          <hr class='text-muted'>
+          <div class='btn-container d-flex'>
+            <button type='button' class='col btn mx-2'>
+              <a href=${worksArray[id].live}>See live <i class='fa-solid fa-arrow-up-right-from-square'></i></a>
+            </button>
+            <button type='button' class='col btn mx-2'>
+              <a href=${worksArray[id].source}>See source <i class='fa-brands fa-github'></i></a>
             </button>
           </div>
         </div>
       </div>
     </article>
-    <div class="d-flex justify-content-center p-2">
-      <div id="black-bar"></div>
+    <div class='fixed-bottom mb-2 d-flex justify-content-center p-2'>
+      <div id='black-bar'></div>
     </div>`;
   workModal.appendChild(workCard);
   const closeWorkModalBtn = document.getElementById('close-modal-btn');
