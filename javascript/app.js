@@ -170,10 +170,10 @@ const cardClickHandler = (id) => {
           />
         </picture>
       </div>
-      <div class='col-md-7'>
+      <div class='col-lg-7'>
         <p class='work-card__description'>${worksArray[id].description}</p>
       </div>
-      <div class='col-md-5'>
+      <div class='col-lg-5'>
       <ul class='work-card__technologies my-2'>
           <li>${worksArray[id].technologies[0]}</li>
           <li>${worksArray[id].technologies[1]}</li>
