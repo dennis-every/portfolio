@@ -127,7 +127,13 @@ To run tests, run the following command:
 - Twitter: [@dennis_every](https://twitter.com/dennis_every)
 - LinkedIn: [dennis-every](https://linkedin.com/in/dennis-every)
 
-## 👥 Collaborator <a name="collaborators"></a>
+## 👥 Collaborators <a name="collaborators"></a>
+
+👤 **Hans-Derly Rameau**
+
+- GitHub: [@hansderly](https://github.com/hansderly)
+- Twitter: [@\_hansderly](https://twitter.com/_hansderly)
+- LinkedIn: [ansderly-rameau](https://linkedin.com/in/ansderly-rameau/)
 
 👤 **Kender Romain**
 
