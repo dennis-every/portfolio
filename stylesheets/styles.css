@@ -815,3 +815,8 @@ input {
   background: #fff !important;
   z-index: 999999;
 }
+
+#close-modal-btn > i {
+  color: #67798e;
+  font-size: 1.2rem;
+}

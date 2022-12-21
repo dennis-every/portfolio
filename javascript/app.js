@@ -3,7 +3,6 @@ const mobileMenu = document.getElementById('mobile-menu');
 const closeMenuBtn = document.getElementById('close-menu-btn');
 const mobileLinks = document.getElementById('mobile-links');
 const workModal = document.getElementById('work-modal');
-const closeWorkModalBtn = document.getElementById('close-modal-btn');
 
 const preventDefaultHandler = (e) => {
   e.preventDefault();
@@ -128,6 +127,13 @@ const worksLoadHandler = () => {
   });
 };
 
+const closeWorkModalHandler = () => {
+  workModal.classList.replace('d-flex', 'd-none');
+  workModal.innerHTML = '';
+  document.body.classList.remove('stop-scrolling');
+  document.body.removeEventListener('touchmove', preventDefaultHandler);
+};
+
 const cardClickHandler = (id) => {
   workModal.classList.replace('d-none', 'd-flex');
   document.body.classList.add('stop-scrolling');
@@ -136,6 +142,11 @@ const cardClickHandler = (id) => {
   workCard.classList.add('work-card');
   workCard.classList.add('bg-white');
   workCard.innerHTML = `
+    <header>
+      <div id="close-modal-btn" class="text-end">
+        <i class="fa-solid fa-x"></i>
+      </div>
+    </header>
     <article class='work-card__article'>
       <div class='work-card__header'>
         <picture>
@@ -178,15 +189,9 @@ const cardClickHandler = (id) => {
       <div id="black-bar"></div>
     </div>`;
   workModal.appendChild(workCard);
+  const closeWorkModalBtn = document.getElementById('close-modal-btn');
+  closeWorkModalBtn.addEventListener('click', closeWorkModalHandler);
 };
-
-const closeWorkModalHandler = () => {
-  workModal.classList.replace('d-flex', 'd-none');
-  document.body.classList.remove('stop-scrolling');
-  document.body.removeEventListener('touchmove', preventDefaultHandler);
-};
-
-closeWorkModalBtn.addEventListener('click', closeWorkModalHandler);
 
 const worksActivateLinkHandler = () => {
   const workCards = document.querySelectorAll('.work-card');
