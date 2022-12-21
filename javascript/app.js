@@ -120,8 +120,8 @@ const worksLoadHandler = () => {
               </ul>
             </div>
             <div class='btn-container'>
-              <button type='button' class='btn'>
-                <a href=${work.live}>See Project</a>
+              <button type='button' class='btn btn-project'>
+                <a href='#'>See Project</a>
               </button>
             </div>
           </div>
