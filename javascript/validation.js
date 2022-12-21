@@ -1,10 +1,14 @@
-// Steps
-// create new validation.js
-// grab form element
-// grab email input element
-//  on submit, preventDefault, perform validaton
-// if valid form.submit
-// else show an error message near submit button informing them the error and the form is not sent
-
 const form = document.getElementById('contact-form');
-const email = form.elements['email']
+const { email } = form.elements;
+const alert = document.getElementById('alert');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+    email.textContent = '';
+  } else {
+    alert.classList.replace('d-none', 'd-flex');
+    alert.textContent = 'Email must be lowercase - form not submitted!';
+  }
+});
