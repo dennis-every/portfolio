@@ -327,6 +327,7 @@ fieldset {
   text-decoration: none;
   color: inherit;
   transition: all 0.5s ease-out;
+  font-size: 0.8rem;
 }
 
 .btn-container .btn:hover {
@@ -801,6 +802,12 @@ input {
 
 #work-modal > .work-card {
   overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  #work-modal > .work-card {
+    max-width: 60vw;
+  }
 }
 
 #close-modal-btn > i {
