@@ -27,6 +27,7 @@ mobileLinks.addEventListener('click', closeMenuHandler);
 
 const worksArray = [
   {
+    id: 0,
     title: 'Tonic',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
@@ -39,6 +40,7 @@ const worksArray = [
     source: 'https://github.com/dennis-every/portfolio',
   },
   {
+    id: 1,
     title: 'Multi-Post Stories',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
@@ -51,6 +53,7 @@ const worksArray = [
     source: 'https://github.com/dennis-every/portfolio',
   },
   {
+    id: 2,
     title: 'Tonic',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
@@ -63,6 +66,7 @@ const worksArray = [
     source: 'https://github.com/dennis-every/portfolio',
   },
   {
+    id: 3,
     title: 'Multi-Post Stories',
     experiences: ['Canopy', 'Back End Dev', '2015'],
     description:
@@ -124,11 +128,56 @@ const worksLoadHandler = () => {
   });
 };
 
-const cardClickHandler = (event) => {
-  console.log(event);
+const cardClickHandler = (id) => {
   workModal.classList.replace('d-none', 'd-flex');
   document.body.classList.add('stop-scrolling');
   document.body.addEventListener('touchmove', preventDefaultHandler);
+  const workCard = document.createElement('div');
+  workCard.classList.add('work-card');
+  workCard.classList.add('bg-white');
+  workCard.innerHTML = `
+    <article class='work-card__article'>
+      <div class='work-card__header'>
+        <picture>
+          <source srcset=${worksArray[id].urlDesktop} media='(min-width: 768px)' />
+          <img
+            src=${worksArray[id].urlMobile}
+            alt=${worksArray[id].alt}
+          />
+        </picture>
+      </div>
+      <div class='work-card__body'>
+        <div class='elements'>
+          <header class='work-card__title'>${worksArray[id].title}</header>
+          <div>
+            <ul class='work-card__experience'>
+              <li>${worksArray[id].experiences[0]}</li>
+              <li>&#x2022;</li>
+              <li>${worksArray[id].experiences[1]}</li>
+              <li>&#x2022;</li>
+              <li>${worksArray[id].experiences[2]}</li>
+            </ul>
+          </div>
+          <p class='work-card__description'>${worksArray[1].description}</p>
+          <div>
+            <ul class='work-card__technologies'>
+              <li>${worksArray[id].technologies[0]}</li>
+              <li>${worksArray[id].technologies[1]}</li>
+              <li>${worksArray[id].technologies[2]}</li>
+            </ul>
+          </div>
+          <div class='btn-container'>
+            <button type='button' class='btn'>
+              <a href=${worksArray[id].live}>See Project</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="d-flex justify-content-center p-2">
+      <div id="black-bar"></div>
+    </div>`;
+  workModal.appendChild(workCard);
 };
 
 const closeWorkModalHandler = () => {
@@ -141,8 +190,8 @@ closeWorkModalBtn.addEventListener('click', closeWorkModalHandler);
 
 const worksActivateLinkHandler = () => {
   const workCards = document.querySelectorAll('.work-card');
-  workCards.forEach((card) => {
-    card.addEventListener('click', cardClickHandler);
+  workCards.forEach((card, index) => {
+    card.addEventListener('click', () => cardClickHandler(index));
   });
 };
 

@@ -694,6 +694,7 @@ input {
 }
 
 #black-bar {
+  position: absolute;
   height: 5px;
   width: 134px;
   background: #000;
@@ -790,13 +791,13 @@ input {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 0;
+  padding: 2rem 0.6rem;
   width: 100vw;
   height: 100vh;
   z-index: 9999;
   background: #c1c7d0;
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(10px);
+  /* mix-blend-mode: multiply; */
+  /* backdrop-filter: blur(10px); */
 }
 
 #work-modal > header {
@@ -808,4 +809,9 @@ input {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.bg-white {
+  background: #fff !important;
+  z-index: 999999;
 }
