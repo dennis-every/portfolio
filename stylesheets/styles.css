@@ -307,7 +307,7 @@ fieldset {
 .btn-container {
   width: 100%;
   margin: 0;
-  padding: 12px 0;
+  padding: 0;
 }
 
 .btn-container > .btn {
@@ -327,6 +327,7 @@ fieldset {
   text-decoration: none;
   color: inherit;
   transition: all 0.5s ease-out;
+  font-size: 0.8rem;
 }
 
 .btn-container .btn:hover {
@@ -694,6 +695,7 @@ input {
 }
 
 #black-bar {
+  position: absolute;
   height: 5px;
   width: 134px;
   background: #000;
@@ -780,4 +782,35 @@ input {
   #mobile-menu {
     display: none !important;
   }
+}
+
+/* MODAL */
+
+#work-modal {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 2rem 0.6rem;
+  width: 100vw;
+  height: 100%;
+  z-index: 9999;
+  background: #c1c7d0;
+  overflow: auto;
+}
+
+#work-modal > .work-card {
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  #work-modal > .work-card {
+    max-width: 60vw;
+  }
+}
+
+#close-modal-btn > i {
+  color: #67798e;
+  font-size: 1.2rem;
 }
