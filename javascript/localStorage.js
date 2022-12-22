@@ -92,3 +92,11 @@ function retrieveData() {
 window.onload = () => {
   retrieveData();
 };
+
+const btnReset = document.getElementById('btn-reset');
+
+btnReset.addEventListener('click', (event) => {
+  event.preventDefault();
+  contactForm.reset();
+  availableStorage.clear();
+});
