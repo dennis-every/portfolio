@@ -2,8 +2,8 @@
 // check local storage available ✅
 // - if available : create local storage object ✅
 // - if not: null ✅
-// create a single object for the data
-// listen to change on input fields
+// create a single object for the data ✅
+// listen to change on input fields ✅
 // stringify that data
 // set the object to local
 // on loads of page
@@ -14,6 +14,7 @@
 //! create a reset button that reset the input fields and delete data in local storage
 
 const contactForm = document.getElementById('contact-form');
+const {name, email: emailInput, message} = contactForm.elements
 
 function storageAvailable(type) {
   let storage;
@@ -49,5 +50,17 @@ if (storageAvailable('localStorage')) {
   availableStorage = window.localStorage;
 } else {
   // Too bad, no localStorage for us
-  return;
+ availableStorage = null;
 }
+
+let formData;
+
+name.addEventListener('change', (event) => {
+  console.log(event)
+})
+emailInput.addEventListener('change', (event) => {
+  console.log(event)
+})
+message.addEventListener('change', (event) => {
+  console.log(event)
+})
