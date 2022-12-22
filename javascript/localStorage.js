@@ -6,11 +6,10 @@
 // listen to change on input fields ✅
 // stringify that data ✅
 // set the object to local ✅
-// on loads of page
-// - if available:
-// - if local storage has data: put data into fiels
-// if not: nothing
-// - if not: null
+// on loads of page ✅
+// - if available: 
+// - if local storage has data: put data into fiels ✅
+// if not: nothing ✅
 //! create a reset button that reset the input fields and delete data in local storage
 
 const contactForm = document.getElementById('contact-form');
@@ -75,7 +74,18 @@ message.addEventListener('change', () => {
   storeData(formData);
 });
 
+function retrieveData() {
+  const data = availableStorage.getItem('contactFormData');
+  const parseData = JSON.parse(data)
+  if(data?.length > 0) {
+    console.log(parseData)
+    const {name: nameInput, email: emailInput, message: messageInput} = parseData
+    name.value = nameInput ? nameInput : ''
+    email.value = emailInput ? emailInput : ''
+    message.value = messageInput ? messageInput : ''
+  }
+}
+
 window.onload = () => {
-  const retrievedData = availableStorage.getItem('contactFormData');
-  console.log(retrievedData);
+  retrieveData()
 };
