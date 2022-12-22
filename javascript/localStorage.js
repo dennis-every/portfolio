@@ -53,20 +53,29 @@ if (storageAvailable('localStorage')) {
   availableStorage = null;
 }
 
-let formData = {};
+const formData = {};
+
+function storeData(formData) {
+  const jsonData = JSON.stringify(formData);
+  availableStorage.setItem('contactFormData', jsonData);
+}
 
 name.addEventListener('change', () => {
   formData.name = name.value;
+  storeData(formData);
 });
 
 emailInput.addEventListener('change', () => {
   formData.email = emailInput.value;
+  storeData(formData);
 });
 
 message.addEventListener('change', () => {
   formData.message = message.value;
+  storeData(formData);
 });
 
-let jsonData = JSON.stringify(formData);
-
-availableStorage.setItem('contactFormData', jsonData)
+window.onload = () => {
+  const retrievedData = availableStorage.getItem('contactFormData');
+  console.log(retrievedData);
+};
