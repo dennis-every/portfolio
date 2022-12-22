@@ -5,7 +5,7 @@
 // create a single object for the data ✅
 // listen to change on input fields ✅
 // stringify that data ✅
-// set the object to local
+// set the object to local ✅
 // on loads of page
 // - if available:
 // - if local storage has data: put data into fiels
@@ -68,3 +68,5 @@ message.addEventListener('change', () => {
 });
 
 let jsonData = JSON.stringify(formData);
+
+availableStorage.setItem('contactFormData', jsonData)
