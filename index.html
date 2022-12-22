@@ -299,11 +299,14 @@
                 ></textarea>
               </p>
               <p class="alert alert-danger d-none" role="alert" id="alert"></p>
-              <p>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
                 <button id="btn-contact-form" type="submit">
                   Get in touch
                 </button>
-              </p>
+                <button id="btn-reset" class="mt-5">Reset form</button>
+              </div>
             </fieldset>
           </form>
         </div>
@@ -315,5 +318,6 @@
     </section>
     <script src="./javascript/app.js"></script>
     <script src="./javascript/validation.js"></script>
+    <script src="./javascript/localStorage.js"></script>
   </body>
 </html>
