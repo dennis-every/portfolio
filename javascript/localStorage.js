@@ -7,13 +7,17 @@
 // stringify that data ✅
 // set the object to local ✅
 // on loads of page ✅
-// - if available: 
+// - if available:
 // - if local storage has data: put data into fiels ✅
 // if not: nothing ✅
 //! create a reset button that reset the input fields and delete data in local storage
 
 const contactForm = document.getElementById('contact-form');
-const { name, email: emailInput, message } = contactForm.elements;
+const {
+  name: nameInput,
+  email: emailInput,
+  message: messageInput,
+} = contactForm.elements;
 
 function storageAvailable(type) {
   let storage;
@@ -54,38 +58,37 @@ if (storageAvailable('localStorage')) {
 
 const formData = {};
 
-function storeData(formData) {
+function storeData() {
+  formData.name = nameInput.value;
+  formData.email = emailInput.value;
+  formData.message = messageInput.value;
   const jsonData = JSON.stringify(formData);
   availableStorage.setItem('contactFormData', jsonData);
 }
 
-name.addEventListener('change', () => {
-  formData.name = name.value;
-  storeData(formData);
+nameInput.addEventListener('change', () => {
+  storeData();
 });
 
 emailInput.addEventListener('change', () => {
-  formData.email = emailInput.value;
-  storeData(formData);
+  storeData();
 });
 
-message.addEventListener('change', () => {
-  formData.message = message.value;
-  storeData(formData);
+messageInput.addEventListener('change', () => {
+  storeData();
 });
 
 function retrieveData() {
   const data = availableStorage.getItem('contactFormData');
-  const parseData = JSON.parse(data)
-  if(data?.length > 0) {
-    console.log(parseData)
-    const {name: nameInput, email: emailInput, message: messageInput} = parseData
-    name.value = nameInput ? nameInput : ''
-    email.value = emailInput ? emailInput : ''
-    message.value = messageInput ? messageInput : ''
+  const parseData = JSON.parse(data);
+  if (data?.length > 0) {
+    const { name, email, message } = parseData;
+    nameInput.value = name || '';
+    emailInput.value = email || '';
+    messageInput.value = message || '';
   }
 }
 
 window.onload = () => {
-  retrieveData()
+  retrieveData();
 };
