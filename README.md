@@ -1,32 +1,38 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h1><b>Microverse Project Portfolio Page</b></h1>
-
+  <h1><b>Dennis Every's Portfolio Page</b></h1>
+  <br>
+  <img src="./images/home.png" alt="screenshot" width="40%"  height="80%" />
+  <img src="./images/menu.png" alt="screenshot" width="40%"  height="80%" />
+  <img src="./images/modal.png" alt="screenshot" width="40%"  height="80%" />
+  <img src="./images/contact.png" alt="screenshot" width="40%"  height="80%" />
 </div>
+<br><br>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Microverse Portfolio Page ](#-microverse-portfolio-page-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Author ](#-author-)
+  - [👥 Collaborators ](#-collaborators-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
