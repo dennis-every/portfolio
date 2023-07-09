@@ -1,0 +1,28 @@
+#hero {
+  height: calc(100vh - 3rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#hero h1 {
+  margin-bottom: 1rem;
+}
+
+#hero--btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #555;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  box-shadow: -2px 5px 5px #d5d5d5;
+}
+
+#hero--btn:hover,
+#hero--btn:focus,
+#hero--btn:active {
+  background: #333;
+  color: #fff;
+}

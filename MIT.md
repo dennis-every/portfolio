@@ -1,4 +1,4 @@
-Copyright 2022, Dennis Every
+Copyright 2023, Dennis Every
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this webpage/website and associated documentation files, to deal in the webpage/website without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the webpage/website, and to permit persons to whom the webpage/website is furnished to do so, subject to the following conditions:
 
