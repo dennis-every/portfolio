@@ -1,3 +1,5 @@
+@import url('./themes.css');
+@import url('./media.css');
 @import url('./header.css');
 @import url('./hero.css');
 
@@ -21,8 +23,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  background: #fff;
-  color: #555;
+  background-color: var(--background-color);
+  color: var(--color);
   line-height: 1.5;
   font-family:
     'Poppins',
@@ -36,8 +38,4 @@ body {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-}
-
-main {
-  margin-top: 3rem;
 }
