@@ -3,11 +3,14 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  color: var(--color-light);
+  background: var(--color-text-header);
+  z-index: 100;
 }
 
 #nav {
   height: 4rem;
-  padding: 0.5rem;
+  padding: var(--space-s);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,18 +23,37 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3px;
-  box-shadow: 0 3px 3px var(--color);
+  height: 1px;
+  box-shadow: 0 2px 2px var(--color-text-muted);
 }
 
-#nav--icon {
-  color: var(--background-color);
-  background: var(--color);
-  padding: 0.7rem;
+#nav--left {
   font-size: 0.7rem;
+  padding-right: var(--space-m);
+}
+
+#nav--left > * {
+  background: var(--color-light);
+  color: var(--color-text-header);
+  padding: 0.7rem;
   border-radius: 50%;
 }
 
-#nav--menu {
-  font-size: 2rem;
+#nav--center {
+  display: flex;
+  column-gap: 2rem;
+}
+
+#nav--center > a {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+#nav--right {
+  font-size: var(--font-size-xxxl);
+}
+
+#nav--right > * {
+  margin-left: var(--space-m);
 }

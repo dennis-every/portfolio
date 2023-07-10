@@ -1,15 +1,15 @@
 @media (prefers-color-scheme: dark) {
   /* styles for dark mode */
   body {
-    background-color: black;
-    color: white;
+    background-color: var(color-dark);
+    color: var(color-light);
   }
 }
 
 @media (prefers-color-scheme: light) {
   /* styles for light mode */
   body {
-    background-color: white;
-    color: black;
+    background-color: var(color-background);
+    color: var(color-text);
   }
 }
