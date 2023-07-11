@@ -19,18 +19,18 @@
 }
 
 #hero--text-container {
-  padding: 0 var(--space-l);
+  padding: 0 var(--space-m);
 }
 
 #hero--text {
-  max-width: 50rem;
+  max-width: 60rem;
   background: var(--color-background);
-  padding: var(--space-xxxl) var(--space-xxxxl);
+  padding: var(--space-l) var(--space-l);
   border-radius: var(--border-radius);
 }
 
 #hero--text h2 {
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xl);
   font-weight: normal;
   margin-bottom: var(--space-l);
   color: var(--color-text);
