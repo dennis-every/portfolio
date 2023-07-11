@@ -19,7 +19,7 @@
 }
 
 #hero--text-container {
-  padding: 0 var(--space-m);
+  padding: 0 var(--space-xl);
 }
 
 #hero--text {
@@ -29,8 +29,9 @@
   border-radius: var(--border-radius);
 }
 
-#hero--text h2 {
-  font-size: var(--font-size-xl);
+#hero--text h1,
+h2 {
+  font-size: var(--font-size-xxl);
   font-weight: normal;
   margin-bottom: var(--space-l);
   color: var(--color-text);
@@ -42,7 +43,8 @@
     align-items: center;
   }
 
-  #hero--text h2 {
+  #hero--text h1,
+  h2 {
     font-size: var(--font-size-xxxl);
   }
 }

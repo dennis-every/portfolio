@@ -12,7 +12,7 @@
   }
 }
 
-.portfolio--header > h1 {
+.portfolio--header > h2 {
   font-size: var(--font-size-xxl);
   font-weight: normal;
   margin-bottom: var(--space-xxxl);
@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 60rem) {
-  .portfolio--header > h1 {
+  .portfolio--header > h2 {
     font-size: var(--font-size-xxxxl);
   }
 }

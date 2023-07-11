@@ -1,0 +1,30 @@
+#contact {
+  padding-top: 10rem;
+  height: 100%;
+  background: var(--color-text-muted);
+}
+
+#contact--container {
+  background: var(--color-background);
+  border-radius: 6rem 0 0 0;
+  padding: 10rem var(--space-xxl) var(--space-xxl) var(--space-xxl);
+}
+
+#contact--container > h2 {
+  text-align: center;
+}
+
+#contact--container > p {
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 60rem) {
+  #contact--container {
+    border-radius: 30% 0 0 0;
+    padding: 10rem var(--space-xxxxl) var(--space-xxxxl) var(--space-xxxxl);
+  }
+
+  #contact--container > p {
+    width: 50rem;
+  }
+}

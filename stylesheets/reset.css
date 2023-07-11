@@ -24,3 +24,33 @@ body {
   color: var(--color-text);
   font-family: var(--font-family-sans);
 }
+
+::placeholder {
+  color: var(--color-text-muted);
+  font-family: var(--font-family-sans);
+  font-style: italic;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  height: var(--space-xxxl);
+  width: 100%;
+  background: var(--color-background);
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  border: var(--border);
+  box-shadow: var(--shadow-large);
+  padding: var(--space-s) var(--space-m);
+  margin-bottom: var(--space-l);
+}
+
+textarea {
+  height: 10rem;
+}

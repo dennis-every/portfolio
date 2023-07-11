@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Dennis Neville Every</title>
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,11 +62,11 @@
           </div>
           <div id="hero--text-container">
             <div id="hero--text">
-              <h2>
+              <h1>
                 Hi, I'm Dennis Neville Every, I'm a
                 <span class="text-primary">full-stack software engineer</span>
                 from Aruba.
-              </h2>
+              </h1>
               <h2>
                 I love building simple, beautiful user experiences, currently
                 working for SweetRush.
@@ -84,7 +84,7 @@
         </div>
       </section>
       <section id="portfolio">
-        <div class="portfolio--header"><h1>Featured Projects</h1></div>
+        <div class="portfolio--header"><h2>Featured Projects</h2></div>
         <div class="portfolio--container">
           <div class="portfolio--card">
             <div class="portfolio--card-image">
@@ -254,7 +254,7 @@
       </section>
       <section id="about">
         <div id="about--container">
-          <h1>About</h1>
+          <h2>About</h2>
           <p>
             I am a Full-Stack Software Engineer who loves working with React and
             Ruby on Rails. I enjoy building and architecting greenfield
@@ -354,6 +354,69 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div id="contact--container">
+          <h2>Contact</h2>
+          <p>
+            Ready to collaborate on your next big project or breakthrough idea?
+            I can't wait to hear from you! Let's take your vision and transform
+            it into a digital reality.
+          </p>
+          <form
+            id="contact--form"
+            method="post"
+            action="https://formspree.io/f/mzbwngvr"
+          >
+            <fieldset id="contact--form-fieldset">
+              <p>
+                <label for="name"></label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  maxlength="30"
+                  required
+                />
+              </p>
+              <p>
+                <label for="email"></label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </p>
+              <p>
+                <label for="message"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </p>
+              <p class="alert alert-danger d-none" role="alert" id="alert"></p>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    id="contact--form-btn"
+                    class="btn btn--dark btn--lg"
+                  >
+                    Get in touch
+                  </button>
+                </div>
+              </div>
+            </fieldset>
+          </form>
         </div>
       </section>
     </main>

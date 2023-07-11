@@ -10,6 +10,10 @@
   color: var(--color-secondary);
 }
 
+.text-center {
+  text-align: center;
+}
+
 .visually-hidden {
   display: none !important;
 }

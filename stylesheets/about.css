@@ -6,7 +6,7 @@
 
 #about--container {
   background: var(--color-background);
-  border-radius: 0 5% 0 0;
+  border-radius: 0 6rem 0 0;
   padding: var(--space-xxxxl) var(--space-xxl) var(--space-xxl) var(--space-m);
 }
 
