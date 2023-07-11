@@ -1,0 +1,57 @@
+:root {
+  --font-family-sans:
+    'Poppins',
+    -apple-system,
+    blinkmacsystemfont,
+    'Segoe UI',
+    roboto,
+    oxygen,
+    ubuntu,
+    cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
+  --line-height-headers: 1.1;
+  --line-height-body: 1.5;
+  --font-size-xs: 0.75rem;
+  --font-size-s: 0.875rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 2rem;
+  --font-size-xxxxl: 2.5rem;
+  --space-xxxs: 0.25rem;
+  --space-xxs: 0.375rem;
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 2.5rem;
+  --space-xxxl: 3rem;
+  --space-xxxxl: 4rem;
+
+  /* --color-text-header: hsl(0, 1%, 16%); */
+  --color-text-header: hsl(0, 0%, 0%);
+  --color-text: hsl(0, 5%, 25%);
+  --color-text-muted: hsl(0, 1%, 44%);
+  --color-primary: hsl(189, 38%, 51%);
+  --color-secondary: hsl(151, 95%, 37%);
+
+  /* Neutral colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-light: hsl(0, 0%, 100%);
+  --color-background: var(--color-light);
+  --color-dark: var(--color-text-header);
+
+  /* Border radius */
+  --border-radius: var(--space-xs);
+
+  /* Border */
+  --border: var(--shadow-small);
+
+  /* Shadows */
+  --shadow-large: 2px 4px 10px hsl(0 0% 0% / 0.1);
+  --shadow-small: 1px 3px 6px hsl(0 0% 0% / 0.1);
+}

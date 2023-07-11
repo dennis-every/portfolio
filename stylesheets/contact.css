@@ -1,0 +1,38 @@
+#contact {
+  padding-top: 10rem;
+  height: 100%;
+  background: var(--color-text-muted);
+}
+
+#contact--container {
+  background: var(--color-background);
+  border-radius: 6rem 0 0 0;
+  padding: 6rem var(--space-xxl) 10rem var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact--container > h2 {
+  text-align: center;
+}
+
+#contact--container > p {
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 60rem) {
+  #contact--container {
+    border-radius: 30% 0 0 0;
+    align-items: center;
+  }
+
+  #contact--container > p {
+    font-size: var(--font-size-xl);
+  }
+
+  #contact--container > * {
+    width: 100%;
+    max-width: 40rem;
+  }
+}

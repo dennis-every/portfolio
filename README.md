@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>Dennis Every's Portfolio Page</b></h1>
+  <h1><b>Portfolio Dennis Neville Every</b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -38,13 +38,14 @@
 
 - HTML
 - CSS
+- JavaScript
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Responsive pages**
-- **Contact form**
+- **Responsive design**
+- **Contact form submission and validation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
