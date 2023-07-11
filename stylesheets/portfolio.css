@@ -34,8 +34,8 @@
 
 .portfolio--card {
   border-radius: var(--border-radius);
-  height: 40rem;
-  max-height: 84vh;
+  max-height: 34rem;
+  height: 84vh;
   width: 20rem;
   border: solid 1px var(--color-text-muted);
   padding-bottom: var(--space-m);
@@ -43,6 +43,7 @@
 
 @media (min-width: 60rem) {
   .portfolio--card {
+    max-height: 40rem;
     width: 23.5rem;
   }
 }
