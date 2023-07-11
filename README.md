@@ -1,38 +1,36 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h1><b>Microverse Project Portfolio Page</b></h1>
-
+  <h1><b>Portfolio Dennis Neville Every</b></h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Portfolio Page ](#-portfolio-page-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Author ](#-author-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [❓ FAQ ](#-faq-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Microverse Portfolio Page <a name="about-project"></a>
+# 📖 Portfolio Page <a name="about-project"></a>
 
-**Microverse project portfolio page** is a webpage built to showcase html and css skills learned during the microverse program
+**Portfolio** is the portfolio webpage of Dennis Every - Full Stack Dev
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,13 +38,14 @@
 
 - HTML
 - CSS
+- JavaScript
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Responsive pages**
-- **Contact form**
+- **Responsive design**
+- **Contact form submission and validation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,6 +105,10 @@ To run tests, run the following command:
   npx stylelint "**/*.{css,scss}"
 ```
 
+```sh
+  npx eslint .
+```
+
 ### Deployment
 
 - Deployed with github pages at:
@@ -122,14 +125,6 @@ To run tests, run the following command:
 - GitHub: [@dennis-every](https://github.com/dennis-every)
 - Twitter: [@dennis_every](https://twitter.com/dennis_every)
 - LinkedIn: [dennis-every](https://linkedin.com/in/dennis-every)
-
-## 👥 Collaborator <a name="collaborators"></a>
-
-👤 **Kender Romain**
-
-- GitHub: [@Kensteph](https://github.com/kensteph)
-- Twitter: [@RomainKender](https://twitter.com/RomainKender)
-- LinkedIn: [kender-romain8788](https://www.linkedin.com/in/kender-romain8788/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,14 +143,6 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 Please star this project if you like this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse and it's community of Micronauts for the opportunity to collobarate, help, support, and valuable feedback through code reviews and pair programming.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

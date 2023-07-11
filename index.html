@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Microverse Portfolio Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Dennis Neville Every</title>
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,515 +19,428 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <!-- HEADER TOOLBAR SECTION -->
     <header>
-      <nav id="toolbar">
-        <a href="#" id="logo">My Logo</a>
-        <div id="menu-bars-container">
-          <div id="menu-bars">
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-            <div class="menu-bar"></div>
-          </div>
-          <ul id="menu">
-            <li><a href="#works-container">Portolio</a></li>
-            <li><a href="#about-container">About</a></li>
-            <li><a href="#contact-form-container">Contact</a></li>
-          </ul>
-        </div>
+      <nav id="nav">
+        <span id="nav--left">
+          <a href="#">
+            <i class="fa-brands fa-uncharted"></i>
+          </a>
+        </span>
+        <span id="nav--center">
+          <a class="nav-link visually-hidden-sm" href="#portfolio">Portfolio</a>
+          <a class="nav-link visually-hidden-sm" href="#about">About</a>
+          <a class="nav-link visually-hidden-sm" href="#contact">Contact</a>
+        </span>
+        <span id="nav--right">
+          <span id="toggleDarkMode" onclick="toggleDarkMode()">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+          <span class="visually-hidden-lg" id="menu">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </span>
       </nav>
     </header>
-    <!-- HEADLINE SECTION -->
-    <section id="headline-container">
-      <article id="headline">
+    <section>
+      <div id="mobile-menu" class="d-none flex-column">
         <header>
-          <h1 class="header">
-            <span>I’m Dennis<br />Glad to see you!</span>
-          </h1>
+          <div id="close-menu-btn">
+            <i class="fa-solid fa-x"></i>
+          </div>
         </header>
-        <div>
-          <p class="text">
-            I’m a software developer! I can help you build a product, feature or
-            website. Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
-          </p>
-        </div>
-        <div>
-          <h2 id="connect">Let's Connect</h2>
-        </div>
-        <div id="social-icons-container">
-          <ul id="social-icons">
-            <li class="icon">
-              <a
-                href="https://twitter.com/dennis_every"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://www.linkedin.com/in/dennis-every/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://dennis-every.medium.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./images/medium.png" alt="medium" />
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://github.com/dennis-every"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-            <li class="icon">
-              <a
-                href="https://angel.co/u/dennis-every"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-angellist"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </article>
+        <ul id="mobile-links">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </section>
-    <!-- WORKS SECTION -->
-    <section id="works-container">
-      <ul id="works">
-        <li class="work-card">
-          <article class="work-card__article">
-            <div class="work-card__header">
-              <picture>
-                <source
-                  srcset="images/work_1_lg.png"
-                  media="(min-width: 768px)"
+    <main>
+      <section id="particles-js">
+        <div id="hero">
+          <div id="hero--icon-container">
+            <div id="hero--icon-background">
+              <svg
+                id="hero--icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M171.73,232.813A5.381,5.381,0,0,0,176.7,229.5,48.081,48.081,0,0,1,191.6,204.244c1.243-.828,1.657-2.484,1.657-4.141a4.22,4.22,0,0,0-2.071-3.312L74.429,128.473,148.958,85a9.941,9.941,0,0,0,4.968-8.281,9.108,9.108,0,0,0-4.968-8.281L126.6,55.6a9.748,9.748,0,0,0-9.523,0l-100.2,57.966a9.943,9.943,0,0,0-4.969,8.281V236.954a9.109,9.109,0,0,0,4.969,8.281L39.235,258.07a8.829,8.829,0,0,0,4.968,1.242,9.4,9.4,0,0,0,6.625-2.484,10.8,10.8,0,0,0,2.9-7.039V164.5L169.66,232.4A4.5,4.5,0,0,0,171.73,232.813ZM323.272,377.73a12.478,12.478,0,0,0-4.969,1.242l-74.528,43.062V287.882c0-2.9-2.9-5.8-6.211-4.555a53.036,53.036,0,0,1-28.984.414,4.86,4.86,0,0,0-6.21,4.555V421.619l-74.529-43.061a8.83,8.83,0,0,0-4.969-1.242,9.631,9.631,0,0,0-9.523,9.523v26.085a9.107,9.107,0,0,0,4.969,8.281l100.2,57.553A8.829,8.829,0,0,0,223.486,480a11.027,11.027,0,0,0,4.969-1.242l100.2-57.553a9.941,9.941,0,0,0,4.968-8.281V386.839C332.8,382.285,328.24,377.73,323.272,377.73ZM286.007,78a23,23,0,1,0-23-23A23,23,0,0,0,286.007,78Zm63.627-10.086a23,23,0,1,0,23,23A23,23,0,0,0,349.634,67.914ZM412.816,151.6a23,23,0,1,0-23-23A23,23,0,0,0,412.816,151.6Zm-63.182-9.2a23,23,0,1,0,23,23A23,23,0,0,0,349.634,142.4Zm-63.627,83.244a23,23,0,1,0-23-23A23,23,0,0,0,286.007,225.648Zm-62.074,36.358a23,23,0,1,0-23-23A23,23,0,0,0,223.933,262.006Zm188.883-82.358a23,23,0,1,0,23,23A23,23,0,0,0,412.816,179.648Zm0,72.272a23,23,0,1,0,23,23A23,23,0,0,0,412.816,251.92Z"
                 />
-                <img
-                  src="images/work_1.jpg"
-                  alt="work_tonic_daily_personalized_reads"
-                />
-              </picture>
+              </svg>
             </div>
-            <div class="work-card__body">
-              <div class="elements">
-                <header class="work-card__title">Tonic</header>
-                <div>
-                  <ul class="work-card__experience">
-                    <li>Canopy</li>
-                    <li>&#x2022;</li>
-                    <li>Back End Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-                <p class="work-card__description">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <div>
-                  <ul class="work-card__technologies">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn-container">
-                  <button type="button" class="btn">
-                    <a href="#">See Project</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="work-card">
-          <article class="work-card__article" id="work__second">
-            <div class="work-card__header">
-              <picture>
-                <source
-                  srcset="images/work_2_lg.png"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="images/work_2.jpg"
-                  alt="work_multi-post_stories_daily_personalized_reads"
-                />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="elements">
-                <header class="work-card__title">Multi-Post Stories</header>
-                <div>
-                  <ul class="work-card__experience mobile">
-                    <li>Canopy</li>
-                    <li>&#x2022;</li>
-                    <li>Back End Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                  <ul class="work-card__experience desktop">
-                    <li>FACEBOOK</li>
-                    <li>&#x2022;</li>
-                    <li>Full Stack Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-                <p class="work-card__description mobile">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <p class="work-card__description desktop">
-                  Experimental content creation feature that allows users to add
-                  to an existing story over the course of a day without spamming
-                  their friends.
-                </p>
-                <div>
-                  <ul class="work-card__technologies mobile">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                  <ul class="work-card__technologies desktop">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn-container">
-                  <button type="button" class="btn">
-                    <a href="#">See Project</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="work-card">
-          <article class="work-card__article">
-            <div class="work-card__header">
-              <picture>
-                <source
-                  srcset="images/work_3_lg.png"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="images/work_3.jpg"
-                  alt="work_tonic_daily_personalized_reads"
-                />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="elements">
-                <header class="work-card__title mobile">Tonic</header>
-                <header class="work-card__title desktop">Facebook 360</header>
-                <div>
-                  <ul class="work-card__experience mobile">
-                    <li>Canopy</li>
-                    <li>&#x2022;</li>
-                    <li>Back End Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                  <ul class="work-card__experience desktop">
-                    <li>FACEBOOK</li>
-                    <li>&#x2022;</li>
-                    <li>Full Stack Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                </div>
-                <p class="work-card__description mobile">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <p class="work-card__description desktop">
-                  Exploring the future of media in Facebook's first Virtual
-                  Reality app; a place to discover and enjoy 360 photos and
-                  videos on Gear VR.
-                </p>
-                <div>
-                  <ul class="work-card__technologies mobile">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                  <ul class="work-card__technologies desktop">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn-container">
-                  <button type="button" class="btn">
-                    <a href="#">See Project</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="work-card">
-          <article class="work-card__article" id="work__fourth">
-            <div class="work-card__header">
-              <picture>
-                <source
-                  srcset="images/work_4_lg.png"
-                  media="(min-width: 768px)"
-                />
-                <img
-                  src="images/work_4.jpg"
-                  alt="work_multi-post_stories_daily_personalized_reads"
-                />
-              </picture>
-            </div>
-            <div class="work-card__body">
-              <div class="elements">
-                <header class="work-card__title mobile">
-                  Multi-Post Stories
-                </header>
-                <header class="work-card__title desktop">
-                  Uber Navigation
-                </header>
-                <div>
-                  <ul class="work-card__experience mobile">
-                    <li>Canopy</li>
-                    <li>&#x2022;</li>
-                    <li>Back End Dev</li>
-                    <li>&#x2022;</li>
-                    <li>2015</li>
-                  </ul>
-                  <ul class="work-card__experience desktop">
-                    <li>Uber</li>
-                    <li>&#x2022;</li>
-                    <li>Lead developer</li>
-                    <li>&#x2022;</li>
-                    <li>2018</li>
-                  </ul>
-                </div>
-                <p class="work-card__description mobile">
-                  A daily selection of privately personalized reads; no accounts
-                  or sign-ups required.
-                </p>
-                <p class="work-card__description desktop">
-                  A smart assistant to make driving more safe, efficient, and
-                  fun by unlocking your most expensive computer: your car.
-                </p>
-                <div>
-                  <ul class="work-card__technologies mobile">
-                    <li>html</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                  <ul class="work-card__technologies desktop">
-                    <li>html</li>
-                    <li>Ruby on rails</li>
-                    <li>css</li>
-                    <li>javascript</li>
-                  </ul>
-                </div>
-                <div class="btn-container">
-                  <button type="button" class="btn">
-                    <a href="#">See Project</a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <!-- ABOUT SECTION -->
-    <section id="about-container">
-      <article id="about">
-        <div id="description-container">
-          <div id="description">
-            <h2 class="header">
-              <span>About<br />Myself</span>
-            </h2>
-            <p class="text">
-              I’m a software developer! I can help you build a product, feature
-              or website. Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-            <h2 id="connect">Let's Connect</h2>
-            <div id="social-icons-container">
-              <ul id="social-icons">
-                <li class="icon">
-                  <a
-                    href="https://github.com/dennis-every"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://www.linkedin.com/in/dennis-every/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://angel.co/u/dennis-every"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-angellist"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://twitter.com/dennis_every"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="icon">
-                  <a
-                    href="https://dennis-every.medium.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src="./images/medium.png" alt="medium" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="btn-container">
-              <button type="button" class="btn">
-                <a href="#">Get my resume</a>
+          </div>
+          <div id="hero--text-container">
+            <div id="hero--text">
+              <h1>
+                Hi, I'm Dennis Neville Every, I'm a
+                <span class="text-primary">full-stack software engineer</span>
+                from Aruba.
+              </h1>
+              <h2>
+                I love building simple, beautiful user experiences, currently
+                working for SweetRush.
+              </h2>
+              <button
+                type="button"
+                onclick="window.location.href='#portfolio'"
+                class="btn btn--dark btn--lg visually-hidden-sm"
+              >
+                <i class="fa-solid fa-chevron-down"></i>&nbsp;&nbsp;Explore My
+                Work
               </button>
             </div>
           </div>
         </div>
-        <div id="categories-container">
-          <ul id="categories">
-            <li id="categories-item">
-              <span>Languages</span>
-              <i class="fa-solid fa-chevron-down"></i>
-            </li>
-            <li>
-              <ul id="item-details">
-                <li class="detail">
-                  <img src="images/js.jpg" alt="javascript" />
-                  <span>Javascript</span>
-                </li>
-                <li class="detail">
-                  <img src="images/html.jpg" alt="html" />
-                  <span>HTML</span>
-                </li>
-                <li class="detail">
-                  <img src="images/css.jpg" alt="css" />
-                  <span>Css</span>
-                </li>
-              </ul>
-            </li>
-            <li id="categories-item" class="bottom-border">
-              <span>Frameworks</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </li>
-            <li id="categories-item" class="bottom-border">
-              <span>Skills</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </li>
-          </ul>
+      </section>
+      <section id="portfolio">
+        <div class="portfolio--header"><h2>Featured Projects</h2></div>
+        <div class="portfolio--container">
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/spirit.png" alt="Spirit of Bahamas" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>Spirit of Bahamas</h2>
+                <p>
+                  Designed and built a website with a contact form for a real
+                  estate development project.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://www.spiritofbahamas.club/', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/docasas.png" alt="doCasas" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>doCasas</h2>
+                <p>
+                  A multi-tenant SAAS application for real estate agents to
+                  manage real estate listings.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://www.docasas.com/', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/docarros.png" alt="doCarros" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>doCarros</h2>
+                <p>
+                  A multi-tenant SAAS application for vehicle dealers to manage
+                  vehicle listings.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://www.docarros.com/', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/tresenta.png" alt="Tresenta" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>Tresenta</h2>
+                <p>
+                  A financial accounting application to register accounting
+                  entries and generate financial and tax reports.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://tresenta.herokuapp.com/', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/dobrokers.png" alt="doBrokersGroup" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>DoBrokersGroup</h2>
+                <p>
+                  A real estate webpage for a real estate agency (tenant in
+                  doCasas).
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>JavaScript</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://www.dobrokersgroup.com/', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
+          <div class="portfolio--card">
+            <div class="portfolio--card-image">
+              <img src="./images/airbnb.png" alt="AirBnB" />
+            </div>
+            <div class="portfolio--card-text">
+              <div>
+                <h2>AirBnB Clone</h2>
+                <p>
+                  A capstone group project - Book places like AirBnB using a
+                  React Front-End and a Ruby on Rails Back-End.
+                </p>
+              </div>
+              <div class="portfolio--stack">
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>Ruby on Rails</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn--dark btn--lg"
+                onclick="window.open('https://github.com/dennis-every/book-an-appointment-api', '_blank')"
+              >
+                <i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;View
+                Project
+              </button>
+            </div>
+          </div>
         </div>
-      </article>
-    </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact-form-container">
-      <article id="contact-form-container-article">
-        <div>
-          <h2 id="contact-form-header">Contact me</h2>
-        </div>
-        <div>
-          <p id="contact-form-text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
+      </section>
+      <section id="about">
+        <div id="about--container">
+          <h2>About</h2>
+          <p>
+            I am a Full-Stack Software Engineer who loves working with React,
+            JavaScript, and Ruby. I enjoy learning new technologies and
+            collaborating with others by building and architecting greenfield
+            projects, as well as upgrading and refactoring legacy code bases to
+            improve maintainability - and where I have increased app performance
+            by > 50%, and reduced feature development cycles by > 67% - I’m down
+            for pair programming and hackathons. Otherwise, you can find me on
+            the hiking or mountain biking trails.
           </p>
+          <br />
+          <h2>Let's connect</h2>
+          <div id="about--socials">
+            <a
+              href="https://github.com/dennis-every"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github fa-3x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dennis-every/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin fa-3x"></i>
+            </a>
+            <a
+              href="https://angel.co/u/dennis-every"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-angellist fa-3x"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/dennis_every"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-twitter fa-3x"></i>
+            </a>
+            <a
+              href="https://dennis-every.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-medium fa-3x"></i>
+            </a>
+          </div>
+          <br />
+          <div class="text-center">
+            <button
+              type="button"
+              class="btn btn--dark btn--lg"
+              onclick="window.open('./assets/RESUME_DENNIS_NEVILLE_EVERY_2023.pdf', '_blank')"
+            >
+              View Resume
+            </button>
+          </div>
+          <div id="about--skills-container">
+            <div class="about--skill">
+              <h3>Front-End Skills</h3>
+              <div class="about--skill-stack">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Redux</span>
+                <span>Hotwire</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+            <div class="about--skill">
+              <h3>Back-End Skills</h3>
+              <div class="about--skill-stack">
+                <span>Ruby</span>
+                <span>Rails</span>
+                <span>PostgreSQL</span>
+                <span>MySQL</span>
+              </div>
+            </div>
+            <div class="about--skill">
+              <h3>Tools & Methods</h3>
+              <div class="about--skill-stack">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>GitLab</span>
+                <span>AWS</span>
+                <span>Azure</span>
+                <span>Docker</span>
+                <span>Responsive</span>
+                <span>Rspec</span>
+                <span>TDD</span>
+              </div>
+            </div>
+            <div class="about--skill">
+              <h3>Professional Skills</h3>
+              <div class="about--skill-stack">
+                <span>Remote Pair-Programming</span>
+                <span>Teamwork</span>
+                <span>Mentoring</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
+      </section>
+      <section id="contact">
+        <div id="contact--container">
+          <h2>Contact</h2>
+          <p>
+            Ready to collaborate on your next big project or breakthrough idea?
+            I can't wait to hear from you! Let's take your vision and transform
+            it into a digital reality.
+          </p>
           <form
-            id="contact-form"
+            id="contact--form"
             method="post"
             action="https://formspree.io/f/mzbwngvr"
           >
-            <fieldset id="contact-form-fieldset">
+            <fieldset id="contact--form-fieldset">
               <p>
-                <label>
-                  <input
-                    name="name"
-                    id="name"
-                    type="text"
-                    placeholder="Enter your name"
-                    maxlength="30"
-                    required
-                  />
-                </label>
+                <label for="name"></label>
+                <input
+                  name="name"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  maxlength="30"
+                  required
+                />
               </p>
               <p>
-                <label>
-                  <input
-                    name="email"
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    required
-                /></label>
+                <label for="email"></label>
+                <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                />
               </p>
               <p>
-                <label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Write your message here"
-                    maxlength="500"
-                    required
-                  ></textarea>
-                </label>
+                <label for="message"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
               </p>
-              <p>
-                <button id="btn-contact-form" type="submit">
-                  Get in touch
-                </button>
-              </p>
+              <p class="alert alert-danger d-none" role="alert" id="alert"></p>
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <button
+                    type="submit"
+                    id="contact--form-btn"
+                    class="btn btn--dark btn--lg"
+                  >
+                    Get in touch
+                  </button>
+                </div>
+              </div>
             </fieldset>
           </form>
         </div>
-      </article>
-    </section>
-    <!-- FOOTER SECTION -->
-    <section id="footer">
-      <div id="black-bar"></div>
-    </section>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="index.js" async></script>
   </body>
 </html>
