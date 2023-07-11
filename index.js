@@ -6,9 +6,9 @@ const toggleDarkMode = () => {
   const toggleButton = document.getElementById('toggleDarkMode');
 
   if (document.body.classList.contains('dark-mode')) {
-    toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    toggleButton.innerHTML = '<i class="fa-solid fa-sun"></i>';
   } else {
-    toggleButton.innerHTML = '<i class="fa-regular fa-sun"></i>';
+    toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i>';
   }
 };
 
