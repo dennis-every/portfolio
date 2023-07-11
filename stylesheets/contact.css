@@ -7,7 +7,10 @@
 #contact--container {
   background: var(--color-background);
   border-radius: 6rem 0 0 0;
-  padding: 10rem var(--space-xxl) var(--space-xxl) var(--space-xxl);
+  padding: 6rem var(--space-xxl) 10rem var(--space-xxl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #contact--container > h2 {
@@ -21,10 +24,15 @@
 @media (min-width: 60rem) {
   #contact--container {
     border-radius: 30% 0 0 0;
-    padding: 10rem var(--space-xxxxl) var(--space-xxxxl) var(--space-xxxxl);
+    align-items: center;
   }
 
   #contact--container > p {
-    width: 50rem;
+    font-size: var(--font-size-xl);
+  }
+
+  #contact--container > * {
+    width: 100%;
+    max-width: 40rem;
   }
 }
