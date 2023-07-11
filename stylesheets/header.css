@@ -29,6 +29,7 @@ header {
 
 #nav--left {
   padding-right: var(--space-m);
+  font-size: var(--font-size-l);
 }
 
 #nav--left > a {

@@ -1,16 +1,18 @@
 #portfolio {
   height: 100%;
   padding: var(--space-xxxxl) var(--space-m);
+  padding-top: 10rem;
   background: var(--color-background);
 }
 
 @media (min-width: 60rem) {
   #portfolio {
     padding: var(--space-xxxxl);
+    padding-top: 10rem;
   }
 }
 
-.portfolio--header > h1 {
+.portfolio--header > h2 {
   font-size: var(--font-size-xxl);
   font-weight: normal;
   margin-bottom: var(--space-xxxl);
@@ -18,15 +20,15 @@
 }
 
 @media (min-width: 60rem) {
-  .portfolio--header > h1 {
+  .portfolio--header > h2 {
     font-size: var(--font-size-xxxxl);
   }
 }
 
 .portfolio--container {
   display: flex;
-  column-gap: var(--space-xxl);
-  row-gap: var(--space-xxxxl);
+  column-gap: var(--space-xxxxl);
+  row-gap: 8rem;
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
@@ -37,7 +39,8 @@
   max-height: 34rem;
   height: 84vh;
   width: 20rem;
-  border: solid 1px var(--color-text-muted);
+  border: var(--border);
+  box-shadow: var(--shadow-small);
   padding-bottom: var(--space-m);
 }
 
@@ -46,6 +49,10 @@
     max-height: 40rem;
     width: 23.5rem;
   }
+}
+
+.portfolio--card h2 {
+  font-weight: normal;
 }
 
 .portfolio--card-image > img {

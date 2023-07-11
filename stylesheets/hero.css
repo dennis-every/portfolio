@@ -19,14 +19,18 @@
 }
 
 #hero--text-container {
-  padding: 0 var(--space-l);
+  padding: 0 var(--space-xl);
 }
 
 #hero--text {
-  max-width: 50rem;
+  max-width: 60rem;
+  background: var(--color-background);
+  padding: var(--space-l) var(--space-l);
+  border-radius: var(--border-radius);
 }
 
-#hero--text h2 {
+#hero--text h1,
+h2 {
   font-size: var(--font-size-xxl);
   font-weight: normal;
   margin-bottom: var(--space-l);
@@ -39,7 +43,8 @@
     align-items: center;
   }
 
-  #hero--text h2 {
+  #hero--text h1,
+  h2 {
     font-size: var(--font-size-xxxl);
   }
 }

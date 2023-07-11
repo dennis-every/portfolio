@@ -14,6 +14,7 @@ const toggleDarkMode = () => {
 
 particlesJS.load('particles-js', 'assets/particles.json');
 
+// Set the height of all the skill divs to the maximum height
 // Get all the skill divs
 const skillDivs = document.querySelectorAll('.about--skill');
 // Initialize a variable to store the maximum height
@@ -28,4 +29,110 @@ skillDivs.forEach((div) => {
 // Set the maximum height to all the skill divs
 skillDivs.forEach((div) => {
   div.style.height = `${maxHeight}px`;
+});
+
+// Validation for contact form
+const form = document.getElementById('contact-form');
+const { email } = form.elements;
+const alert = document.getElementById('alert');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+    form.reset();
+  } else {
+    alert.classList.replace('d-none', 'd-flex');
+    alert.textContent = 'Email must be lowercase - form not submitted!';
+  }
+});
+
+// Use local storage to store contact form data
+const contactForm = document.getElementById('contact--form');
+const {
+  name: nameInput,
+  email: emailInput,
+  message: messageInput,
+} = contactForm.elements;
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return (
+      e instanceof DOMException
+      // everything except Firefox
+      && (e.code === 22
+        // Firefox
+        || e.code === 1014
+        // test name field too, because code might not be present
+        // everything except Firefox
+        || e.name === 'QuotaExceededError'
+        // Firefox
+        || e.name === 'NS_ERROR_DOM_QUOTA_REACHED')
+      // acknowledge QuotaExceededError only if there's something already stored
+      && storage
+      && storage.length !== 0
+    );
+  }
+}
+
+let availableStorage;
+
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+  availableStorage = window.localStorage;
+} else {
+  // Too bad, no localStorage for us
+  availableStorage = null;
+}
+
+const formData = {};
+
+function storeData() {
+  formData.name = nameInput.value;
+  formData.email = emailInput.value;
+  formData.message = messageInput.value;
+  const jsonData = JSON.stringify(formData);
+  availableStorage.setItem('contactFormData', jsonData);
+}
+
+nameInput.addEventListener('change', () => {
+  storeData();
+});
+
+emailInput.addEventListener('change', () => {
+  storeData();
+});
+
+messageInput.addEventListener('change', () => {
+  storeData();
+});
+
+function retrieveData() {
+  const data = availableStorage.getItem('contactFormData');
+  const parseData = JSON.parse(data);
+  if (data?.length > 0) {
+    const { name, email, message } = parseData;
+    nameInput.value = name || '';
+    emailInput.value = email || '';
+    messageInput.value = message || '';
+  }
+}
+
+window.onload = () => {
+  retrieveData();
+};
+
+const btnReset = document.getElementById('contact--form-btn-reset');
+
+btnReset.addEventListener('click', (event) => {
+  event.preventDefault();
+  contactForm.reset();
+  availableStorage.clear();
 });
