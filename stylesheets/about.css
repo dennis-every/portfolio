@@ -25,7 +25,7 @@
 #about--socials {
   display: flex;
   column-gap: var(--space-xl);
-  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xxxl);
 }
 
 #about--socials > a {
@@ -34,12 +34,12 @@
 }
 
 #about--skills-container {
-  margin-top: var(--space-xxl);
+  margin-top: var(--space-xxxxl);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   column-gap: var(--space-m);
-  row-gap: var(--space-m);
+  row-gap: var(--space-xxl);
 }
 
 @media (min-width: 60rem) {
@@ -50,18 +50,18 @@
 
 .about--skill {
   border-radius: var(--border-radius);
-  padding: var(--space-xs) var(--space-s);
+  padding: var(--space-s) var(--space-s);
   height: 100%;
-  width: 10rem;
+  width: 20rem;
   border: solid 1px var(--color-text-muted);
   display: flex;
   flex-direction: column;
 }
 
-@media (min-width: 60rem) {
-  .about--skill {
-    width: 15rem;
-  }
+.about--skill > h3 {
+  font-size: var(--font-size-l);
+  font-weight: normal;
+  margin-bottom: var(--space-xs);
 }
 
 .about--skill-stack {
