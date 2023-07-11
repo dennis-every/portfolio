@@ -1,6 +1,16 @@
 :root {
-  --font-family-sans: 'Poppins', -apple-system, blinkmacsystemfont, 'Segoe UI',
-    roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-sans:
+    'Poppins',
+    -apple-system,
+    blinkmacsystemfont,
+    'Segoe UI',
+    roboto,
+    oxygen,
+    ubuntu,
+    cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   --line-height-headers: 1.1;
   --line-height-body: 1.5;
   --font-size-xs: 0.75rem;

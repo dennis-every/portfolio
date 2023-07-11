@@ -12,7 +12,8 @@
 
 @media (min-width: 60rem) {
   #about--container {
-    padding: var(--space-xxxxl) var(--space-xxxxl) var(--space-xxxxl)
+    padding:
+      var(--space-xxxxl) var(--space-xxxxl) var(--space-xxxxl)
       var(--space-xxxxl);
   }
 
