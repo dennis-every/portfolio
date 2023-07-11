@@ -1,14 +1,18 @@
 #portfolio {
   height: 100%;
-  padding: var(--space-xxxxl) var(--space-m);
-  padding-top: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
   background: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 60rem) {
   #portfolio {
-    padding: var(--space-xxxxl);
     padding-top: 10rem;
+    padding-bottom: 20rem;
   }
 }
 
@@ -32,6 +36,8 @@
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
+  width: 100%;
+  max-width: 100rem;
 }
 
 .portfolio--card {
