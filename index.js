@@ -14,7 +14,38 @@ const toggleDarkMode = () => {
 
 particlesJS.load('particles-js', 'assets/particles.json');
 
+// Make navigaiton links active when scrolling to the corresponding section
+
+// Get all the navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+// Add event listeners to each link
+navLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    targetSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+// Add event listener to track scroll position
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  // Check each section's position and add active class to the corresponding link
+  navLinks.forEach((link) => {
+    const targetId = link.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    const sectionTop = targetSection.offsetTop;
+    const sectionHeight = targetSection.offsetHeight;
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+});
+
 // Set the height of all the skill divs to the maximum height
+
 // Get all the skill divs
 const skillDivs = document.querySelectorAll('.about--skill');
 // Initialize a variable to store the maximum height

@@ -54,6 +54,11 @@ header {
   text-decoration: none;
 }
 
+.nav-link.active {
+  color: var(--color-light) !important;
+  transition: color 1s ease-in-out;
+}
+
 #nav--right {
   font-size: var(--font-size-xxxl);
 }
