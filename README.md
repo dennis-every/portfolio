@@ -1,21 +1,15 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>Dennis Every's Portfolio Page</b></h1>
-  <br>
-  <img src="./images/home.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/menu.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/modal.png" alt="screenshot" width="40%"  height="80%" />
-  <img src="./images/contact.png" alt="screenshot" width="40%"  height="80%" />
+  <h1><b>Portfolio Dennis Neville Every</b></h1>
 </div>
-<br><br>
 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Microverse Portfolio Page ](#-microverse-portfolio-page-)
+- [📖 Portfolio Page ](#-portfolio-page-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -27,18 +21,16 @@
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
   - [👥 Author ](#-author-)
-  - [👥 Collaborators ](#-collaborators-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
   - [❓ FAQ ](#-faq-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Microverse Portfolio Page <a name="about-project"></a>
+# 📖 Portfolio Page <a name="about-project"></a>
 
-**Microverse project portfolio page** is a webpage built to showcase html and css skills learned during the microverse program
+**Portfolio** is the portfolio webpage of Dennis Every - Full Stack Dev
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,13 +38,14 @@
 
 - HTML
 - CSS
+- JavaScript
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Responsive pages**
-- **Contact form**
+- **Responsive design**
+- **Contact form submission and validation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,20 +126,6 @@ To run tests, run the following command:
 - Twitter: [@dennis_every](https://twitter.com/dennis_every)
 - LinkedIn: [dennis-every](https://linkedin.com/in/dennis-every)
 
-## 👥 Collaborators <a name="collaborators"></a>
-
-👤 **Hans-Derly Rameau**
-
-- GitHub: [@hansderly](https://github.com/hansderly)
-- Twitter: [@\_hansderly](https://twitter.com/_hansderly)
-- LinkedIn: [ansderly-rameau](https://linkedin.com/in/ansderly-rameau/)
-
-👤 **Kender Romain**
-
-- GitHub: [@Kensteph](https://github.com/kensteph)
-- Twitter: [@RomainKender](https://twitter.com/RomainKender)
-- LinkedIn: [kender-romain8788](https://www.linkedin.com/in/kender-romain8788/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -164,14 +143,6 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 Please star this project if you like this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank Microverse and it's community of Micronauts for the opportunity to collobarate, help, support, and valuable feedback through code reviews and pair programming.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,0 +1,45 @@
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.visually-hidden {
+  display: none !important;
+}
+
+.visually-hidden-sm {
+  display: none !important;
+}
+
+@media (min-width: 60rem) {
+  .visually-hidden-sm {
+    display: block !important;
+  }
+
+  .visually-hidden-lg {
+    display: none !important;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
