@@ -39,12 +39,26 @@
           <span id="toggleDarkMode" onclick="toggleDarkMode()">
             <i class="fa-solid fa-moon"></i>
           </span>
-          <span class="visually-hidden-lg">
+          <span class="visually-hidden-lg" id="menu">
             <i class="fa-solid fa-bars"></i>
           </span>
         </span>
       </nav>
     </header>
+    <section>
+      <div id="mobile-menu" class="d-none flex-column">
+        <header>
+          <div id="close-menu-btn">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </header>
+        <ul id="mobile-links">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </section>
     <main>
       <section id="particles-js">
         <div id="hero">
@@ -308,13 +322,15 @@
             </a>
           </div>
           <br />
-          <button
-            type="button"
-            class="btn btn--dark btn--lg"
-            onclick="window.open('./assets/RESUME_DENNIS_NEVILLE_EVERY_2023.pdf', '_blank')"
-          >
-            View Resume
-          </button>
+          <div class="text-center">
+            <button
+              type="button"
+              class="btn btn--dark btn--lg"
+              onclick="window.open('./assets/RESUME_DENNIS_NEVILLE_EVERY_2023.pdf', '_blank')"
+            >
+              View Resume
+            </button>
+          </div>
           <div id="about--skills-container">
             <div class="about--skill">
               <h3>Front-End Skills</h3>

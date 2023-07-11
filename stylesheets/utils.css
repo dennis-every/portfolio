@@ -31,3 +31,15 @@
     display: none !important;
   }
 }
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
