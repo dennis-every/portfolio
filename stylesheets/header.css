@@ -28,15 +28,18 @@ header {
 }
 
 #nav--left {
-  font-size: 0.7rem;
   padding-right: var(--space-m);
 }
 
-#nav--left > * {
+#nav--left > a {
   background: var(--color-light);
   color: var(--color-text-header);
-  padding: 0.7rem;
+  padding: var(--space-s);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
+  text-decoration: none;
 }
 
 #nav--center {
