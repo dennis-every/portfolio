@@ -25,7 +25,7 @@
 
 .portfolio--container {
   display: flex;
-  column-gap: var(--space-xxl);
+  column-gap: var(--space-xxxxl);
   row-gap: var(--space-xxxxl);
   flex-wrap: wrap;
   height: 100%;
@@ -37,7 +37,7 @@
   max-height: 34rem;
   height: 84vh;
   width: 20rem;
-  border: solid 1px var(--color-text-muted);
+  box-shadow: var(--shadow-small);
   padding-bottom: var(--space-m);
 }
 

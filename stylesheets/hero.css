@@ -24,6 +24,9 @@
 
 #hero--text {
   max-width: 50rem;
+  background: var(--color-background);
+  padding: var(--space-xxxl) var(--space-xxxxl);
+  border-radius: var(--border-radius);
 }
 
 #hero--text h2 {
