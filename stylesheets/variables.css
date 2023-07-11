@@ -39,9 +39,9 @@
   --border-radius: var(--space-xs);
 
   /* Border */
-  --border: solid 2px var(--color-text-muted);
+  --border: var(--shadow-small);
 
   /* Shadows */
-  --shadow-large: 2px 4px 10px var(--color-text-muted);
-  --shadow-small: 1px 3px 6px var(--color-text-muted);
+  --shadow-large: 2px 4px 10px hsl(0 0% 0% / 0.1);
+  --shadow-small: 1px 3px 6px hsl(0 0% 0% / 0.1);
 }

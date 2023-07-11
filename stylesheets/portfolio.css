@@ -37,6 +37,7 @@
   max-height: 34rem;
   height: 84vh;
   width: 20rem;
+  border: var(--border);
   box-shadow: var(--shadow-small);
   padding-bottom: var(--space-m);
 }
@@ -46,6 +47,10 @@
     max-height: 40rem;
     width: 23.5rem;
   }
+}
+
+.portfolio--card h2 {
+  font-weight: normal;
 }
 
 .portfolio--card-image > img {
