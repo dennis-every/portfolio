@@ -1,5 +1,6 @@
 #particles-js {
   margin-top: 4rem;
+
   /* background-image: url('../images/background.jpg'); */
   height: calc(100vh - 4rem);
   background-attachment: fixed;
