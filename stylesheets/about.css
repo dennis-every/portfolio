@@ -50,51 +50,58 @@
 
 #about--skills-container {
   margin-top: var(--space-xxxxl);
+  margin-bottom: var(--space-xxxxl);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  column-gap: var(--space-m);
-  row-gap: var(--space-xxl);
+  align-items: stretch;
+  gap: var(--space-xxxxl);
+  width: 80vw;
+  max-width: 70rem;
 }
 
-@media (min-width: 60rem) {
+@media screen and (min-width: 60rem) {
   #about--skills-container {
-    justify-content: flex-start;
+    gap: var(--space-m);
   }
 }
 
 .about--skill {
   border-radius: var(--border-radius);
-  padding: var(--space-s) var(--space-s);
-  height: 100%;
-  width: 16rem;
-  border: solid 1px var(--color-text-muted);
+  padding-top: var(--space-xxxxl);
+  padding-bottom: var(--space-l);
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
+  width: 80vw;
+  max-width: 30rem;
+  background: var(--color-muted-background);
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .about--skill > h3 {
   font-size: var(--font-size-l);
   font-weight: normal;
-  margin-bottom: var(--space-xs);
 }
 
 .about--skill-stack {
   margin-top: var(--space-m);
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--space-xs);
-  row-gap: var(--space-xs);
+  align-items: flex-end;
+  gap: var(--space-xs);
 }
 
 .about--skill-stack > span {
   font-size: var(--font-size-m);
-  border: solid 1px var(--color-text-muted);
   border-radius: var(--border-radius);
   padding: var(--space-xxxs) var(--space-xs);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--color-pill-background);
 }
 
 @media screen and (min-width: 60rem) {

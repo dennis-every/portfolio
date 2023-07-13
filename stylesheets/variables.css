@@ -43,6 +43,10 @@
   --color-white: hsl(0, 0%, 100%);
   --color-light: hsl(0, 0%, 100%);
   --color-background: var(--color-light);
+  --color-muted-background: hsl(0, 0%, 95%);
+  --color-dark-muted-background: #2e303a;
+  --color-pill-background: hsl(0, 0%, 85%);
+  --color-dark-pill-background: #3a3d4a;
   --color-dark: var(--color-text-header);
 
   /* Border radius */
