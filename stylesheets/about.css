@@ -7,13 +7,20 @@
 #about--container {
   background: var(--color-background);
   border-radius: 0 6rem 0 0;
-  padding: 6rem var(--space-xxl) var(--space-xxl) var(--space-m);
+  padding: 6rem var(--space-m) 10rem var(--space-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 60rem) {
   #about--container {
     border-radius: 0 30% 0 0;
-    padding: var(--space-xxxxl);
+    align-items: center;
+    padding-top: 10rem;
+    padding-left: var(--space-xxxxl);
+    padding-right: var(--space-xxxxl);
   }
 
   #about--container > p {
@@ -22,10 +29,18 @@
   }
 }
 
+#about--container-resume-btn {
+  margin-top: var(--space-xxxxl);
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
 #about--socials {
+  margin-top: 0;
+  margin-bottom: var(--space-xxxxl);
   display: flex;
   column-gap: var(--space-xl);
-  margin-bottom: var(--space-xxxl);
 }
 
 #about--socials > a {
