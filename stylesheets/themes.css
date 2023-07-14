@@ -2,4 +2,7 @@
   --color-background: var(--color-dark);
   --color-text: var(--color-light);
   --border: solid 1px #333;
+  --color-muted-background: var(--color-dark-muted-background);
+  --color-pill-background: var(--color-dark-pill-background);
+  --color-card-background: var(--color-dark-muted-background);
 }
