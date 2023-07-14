@@ -42,12 +42,13 @@
 .portfolio--card {
   border-radius: var(--border-radius);
   background: var(--color-card-background);
-  max-height: 34rem;
+  max-height: 40rem;
   height: 84vh;
   width: 20rem;
-
-  /* border: var(--border); */
   box-shadow: var(--shadow-small);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--space-l);
 }
 
 @media (min-width: 60rem) {
@@ -63,9 +64,13 @@
   font-weight: normal;
 }
 
+.portfolio--card-image {
+  height: 50%;
+}
+
 .portfolio--card-image > img {
-  max-width: 100%;
-  max-height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   object-fit: cover;
   border-bottom: solid 1px var(--color-muted-background);
@@ -73,7 +78,7 @@
 
 .portfolio--card-text {
   padding: var(--space-xxxs) var(--space-m);
-  height: 38%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
