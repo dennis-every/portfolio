@@ -45,6 +45,7 @@
   max-height: 34rem;
   height: 84vh;
   width: 20rem;
+
   /* border: var(--border); */
   box-shadow: var(--shadow-small);
 }
