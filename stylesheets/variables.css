@@ -1,16 +1,6 @@
 :root {
-  --font-family-sans:
-    'Poppins',
-    -apple-system,
-    blinkmacsystemfont,
-    'Segoe UI',
-    roboto,
-    oxygen,
-    ubuntu,
-    cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  --font-family-sans: 'Poppins', -apple-system, blinkmacsystemfont, 'Segoe UI',
+    roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --line-height-headers: 1.1;
   --line-height-body: 1.5;
   --font-size-xs: 0.75rem;
@@ -45,6 +35,7 @@
   --color-background: var(--color-light);
   --color-muted-background: hsl(0, 0%, 95%);
   --color-dark-muted-background: #2e303a;
+  --color-card-background: var(--color-background);
   --color-pill-background: hsl(0, 0%, 85%);
   --color-dark-pill-background: #3a3d4a;
   --color-dark: var(--color-text-header);
