@@ -111,8 +111,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-- Deployed with github pages at:
-- https://dennis-every.github.io/
+- Deployed with github pages here[https://dennis-every.github.io/portfolio/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
